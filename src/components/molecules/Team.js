@@ -9,9 +9,9 @@ const Team = () => {
     <div className='p-3 p-lg-5'>
       <h2 className='transp'>Our Team</h2>
       <div className='row align-items-center justify-content-between'>
-        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="flip-up" data-aos-duration="2000"><Image className="picone" src={pic1}/></div>
-        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="flip-down" data-aos-duration="2000"><Image className="picone" src={pic2}/></div>
-        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="flip-up" data-aos-duration="2000"><Image className="pictwo" src={pic3}/></div>
+        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="fade-up" data-aos-duration="2000"><Image className="picone" src={pic1}/></div>
+        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="fade-up" data-aos-duration="2000"><Image className="picone" src={pic2}/></div>
+        <div className='col-sm-12 col-md-12 col-lg-4 p-0 ' data-aos="fade-up" data-aos-duration="2000"><Image className="pictwo" src={pic3}/></div>
       </div>
     </div>
   )

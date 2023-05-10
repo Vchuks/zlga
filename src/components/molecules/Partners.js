@@ -19,54 +19,54 @@ import verve from '../../images/verve.jpg'
 
 const Partners = () => {
   return (
-    <div className='d-flex align-items-center gap-3 py-4'>
+    <div className='d-flex align-items-center gap-3 py-4 part'>
         <div className='w-100 partner'>
-            <Image className="w-100" src={access}/>
+            <Image className="patimg" src={access}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={ash}/>
+            <Image className="patimg" src={ash}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={inter}/>
+            <Image className="patimg" src={inter}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={justice}/>
+            <Image className="patimg" src={justice}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={kaduna}/>
+            <Image className="patimg" src={kaduna}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={kunden}/>
+            <Image className="patimg" src={kunden}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={lawma}/>
+            <Image className="patimg" src={lawma}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={ondo}/>
+            <Image className="patimg" src={ondo}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={uba}/>
+            <Image className="patimg" src={uba}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={providus}/>
+            <Image className="patimg" src={providus}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={mastercard}/>
+            <Image className="patimg" src={mastercard}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={otto}/>
+            <Image className="patimg" src={otto}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={forte}/>
+            <Image className="patimg" src={forte}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={indocorp}/>
+            <Image className="patimg" src={indocorp}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={heritage}/>
+            <Image className="patimg" src={heritage}/>
         </div>
         <div className='w-100 partner'>
-            <Image className="w-100" src={verve}/>
+            <Image className="patimg" src={verve}/>
         </div>
     </div>
   )

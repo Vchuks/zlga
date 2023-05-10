@@ -70,10 +70,13 @@ a{
   color: #106804;
   font-weight: 700;
 }
-.partner{
+.part{
   width: 100%;
   position: relative;
   animation: moveleft 10s infinite;
+}
+.patimg{
+  width: 80px;
 }
 @keyframes moveleft {
   from {right: 0;}
@@ -116,7 +119,7 @@ a{
 .react-multi-carousel-dot--active button{
   background-color: #106804 !important;
   border-color: #106804 !important; 
-}
+} 
 .tech-box-container{
   padding: 4rem 0;
   gap: 7rem;
@@ -330,6 +333,10 @@ animation: glow 1s ease-in-out infinite alternate;
     height: 250px;
     margin-bottom: 1rem !important;
   }
+  .carou-head{
+    color: #272727;
+    font-size: 20px;
+  }
   .tech-box-container{
     flex-direction: column;
     gap: 2rem;
@@ -402,6 +409,21 @@ animation: glow 1s ease-in-out infinite alternate;
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+  }
+  
+  .patimg{
+    width: 60px;
+  } 
+  .part{
+    width: 100%;
+    position: relative;
+    animation: moveleft2 10s infinite;
+    overflow:visible;
+  }
+  
+  @keyframes moveleft2 {
+    from {right: 0;}
+    to {right: 180%;}
   }
   .event{
     width: 100%;
