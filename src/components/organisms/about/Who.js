@@ -13,7 +13,7 @@ const Who = () => {
    
   return (
     <>
-    <div className='row bg-white p-3 p-lg-5 align-items-center'>
+    <div className='row bg-white p-3 p-lg-5 align-items-center gap-4 gap-lg-0'>
       <div className='col-sm-12 col-md-12 col-lg-6' data-aos="zoom-in-up" data-aos-duration="2000">
         <Image className="w-100" src={whoimg}/>
       </div>
@@ -29,7 +29,7 @@ const Who = () => {
         {/* <button onClick={()=>document.querySelector('.whocomment').classList.add('whocomment-trunc')}>Read less...</button> */}
       </div>
     </div>
-    <div className='row bg-white p-3 p-lg-5 align-items-center flex-row-reverse'>
+    <div className='row bg-white p-3 p-lg-5 align-items-center flex-row-reverse gap-4 gap-lg-0'>
       <div className='col-sm-12 col-md-12 col-lg-5 d-flex justify-content-end' data-aos="zoom-out" data-aos-duration="2000">
         <Image className="w-100" src={whoimg2}/>
       </div>
@@ -46,7 +46,7 @@ As a business development consultant, she has worked with several international 
         {/* <button onClick={()=>document.querySelector('.whocomment').classList.add('whocomment-trunc')}>Read less...</button> */}
       </div>
     </div>
-    <div className='row bg-white p-3 p-lg-5 align-items-center'>
+    <div className='row bg-white p-3 p-lg-5 align-items-center gap-4 gap-lg-0'>
       <div className='col-sm-12 col-md-12 col-lg-6' data-aos="zoom-out" data-aos-duration="2000">
         <Image className="w-100" src={whoimg3}/>
       </div>

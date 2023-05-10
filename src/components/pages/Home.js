@@ -24,9 +24,7 @@ const Home = () => {
       <Team />
       <CarousellEvent />
       <Audio />
-      <div>
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
   )
 }

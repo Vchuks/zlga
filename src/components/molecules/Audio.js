@@ -16,11 +16,6 @@ const Audio = () => {
         <div>
           <Text className=" text-white fs-5 m-0" children="Join and Enjoy our Online Radio" />
           <Text className="radio-text m-0 pb-3" children="Kunden Online Radio" />
-          <audio controls autoplay>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
           <div className="d-flex justify-content-center pt-2">
             <Image src={playimg} className="audioplay"/>
           </div>

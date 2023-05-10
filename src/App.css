@@ -262,6 +262,9 @@ audio {
 }
 .audioplay{
   width: 7%;
+  border-radius: 50%;
+animation: glow 1s ease-in-out infinite alternate;
+
 }
 .radio-text{
   color: #BEC8BD;
@@ -313,6 +316,9 @@ audio {
     display: inline-flex;
     justify-content:left;
   }
+  .navtext{
+    font-size: 18px;
+  }
   .head-text{
     width: 100%;
     font-size: 30px;
@@ -356,10 +362,11 @@ audio {
   .wrapper{
     width: 100%;
     /* background: url("./images/re"); */
-    height: 200px;
+    height: 300px;
     position: relative;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .wrapper2{
     width: 100%;
@@ -378,7 +385,7 @@ audio {
   .playimg{
   position: absolute;
   left: 42%;
-  top:30%;
+  top:45%;
   }
   .playimg img{
     width: 50px;
@@ -408,6 +415,11 @@ audio {
     /* height: 300px; */
     margin-bottom: 1rem !important;
   }
+  .eventimg{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
   .eventtext{
     width: 70%;
     border-radius: 8px;
@@ -418,6 +430,14 @@ audio {
   }
   .audioplay{
     width: 15%;
+  }
+  .aboutimg{
+    object-fit:cover;
+    height:230px;
+    border-radius: 20px;
+  }
+  .footcomment{
+    width: 100%;
   }
   
 }

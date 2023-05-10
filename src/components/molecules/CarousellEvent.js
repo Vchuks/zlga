@@ -95,7 +95,7 @@ const CarousellEvent = () => {
           return (
             <>
               <div
-                className=" row event event px-3 py-3 p-lg-5 gap-4 flex-column"
+                className=" row event px-3 py-3 p-lg-5 gap-4 flex-column"
                 key={idx}
               >
                 <Text
@@ -108,7 +108,7 @@ const CarousellEvent = () => {
                   children="Check out our latest events at ZL Global Alliance"
                 />
                 <div className=" p-0 col w-100 ">
-                  <Image src={eachlist.img} alt="" className="w-100" />
+                  <Image src={eachlist.img} alt="" className="w-100 eventimg" />
                 </div>
                 <div className="col eventtext p-0">
                   <Text className="text-center" children={eachlist.comment} />
