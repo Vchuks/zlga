@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../atom/Text";
 import comp from "../../images/Comp 1.json";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import CountUp from 'react-countup';
 
 const Header = () => {
   return (
@@ -17,18 +18,27 @@ const Header = () => {
         />
         <div className="headstat d-flex justify-content-between">
           <div className="text-center">
-            <Text className="colorgreen m-0 head-text3" children="7000+" />
+            <div className="d-flex colorgreen head-text3 m-0 justify-content-center">
+
+            <Text className="colorgreen m-0 head-text3" children={<CountUp end={7000} />} /><span>+</span>
+            </div>
             <Text className="colorlight m-0" children="Employees" />
           </div>
           <div className="text-center">
-            <Text className="colorgreen m-0 head-text3" children="95%" />
+            <div className="d-flex colorgreen m-0 head-text3 justify-content-center">
+
+            <Text className="colorgreen m-0 head-text3" children={<CountUp end={95} />} /><span>%</span>
+            </div>
             <Text
               className="colorlight m-0"
               children="Customers Satisfaction"
             />
           </div>
           <div className="text-center">
-            <Text className="colorgreen m-0 head-text3" children="90,000+" />
+            <div className="d-flex colorgreen m-0 head-text3 justify-content-center">
+
+            <Text className="colorgreen m-0 head-text3" children={<CountUp end={90000}/>} /><span>+</span>
+            </div>
             <Text
               className="colorlight m-0"
               children="Tonnes of Trash recycled"
