@@ -29,6 +29,7 @@ const Tech = () => {
               children="A remedy to deficiencies in one or two O/L requirements for a course of study."
             />
             <TextLinks
+            to="/basic"
               className="w-100 d-inline-flex justify-content-center"
               children={
                 <Button className="btn btn-tech px-5 py-2" children="Learn more" />
@@ -50,6 +51,7 @@ const Tech = () => {
               children="An holistic comprehension of solid and liquid waste management."
             />
             <TextLinks
+            to="/waste"
               className="w-100 d-inline-flex justify-content-center"
               children={
                 <Button className="btn btn-tech px-5 py-2" children="Learn more" />
@@ -58,7 +60,7 @@ const Tech = () => {
           </div>
         </div>
       </div>
-        <TextLinks to="#" className=" d-flex justify-content-center" children={<Button className="btn btn-tech2 " children="Explore More Courses"/>} />
+        <TextLinks to="/school" className=" d-flex justify-content-center" children={<Button className="btn btn-tech2 " children="Explore More Courses"/>} />
     </div>
   );
 };

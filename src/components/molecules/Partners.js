@@ -19,7 +19,7 @@ import verve from '../../images/verve.jpg'
 
 const Partners = () => {
   return (
-    <div className='d-flex align-items-center gap-3 py-4 part'>
+    <div className='d-flex align-items-center gap-3 ps-5 py-4 part'>
         <div className=' partner'>
             <Image className="patimg" src={access}/>
         </div>

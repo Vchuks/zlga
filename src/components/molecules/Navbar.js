@@ -41,7 +41,7 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="/school">
                       School
                     </NavLink>
                   </li>
