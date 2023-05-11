@@ -58,6 +58,7 @@ const Tech = () => {
           </div>
         </div>
       </div>
+        <TextLinks to="#" className=" d-flex justify-content-center" children={<Button className="btn btn-tech2 " children="Explore More Courses"/>} />
     </div>
   );
 };

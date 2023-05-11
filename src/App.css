@@ -71,16 +71,23 @@ a{
   font-weight: 700;
 }
 .part{
-  width: 100%;
+  width: auto;
+  overflow: hidden;
   position: relative;
-  animation: moveleft 10s infinite;
+  margin: auto;
 }
+.partner{
+  width: calc(130px * 16);
+  position: relative;
+  animation: moveleft 10s linear infinite;
+}
+
 .patimg{
-  width: 80px;
+  width: 130px;
 }
 @keyframes moveleft {
-  from {right: 0;}
-  to {right: 20%;}
+  0% {transform: translateX(0);}
+  100% {transform: translateX(calc(-130px * 8));}
 }
 .learn-btn {
   background-color: #106804;
@@ -152,6 +159,12 @@ a{
 }
 .btn-tech{
   color: #106804;
+  border: 1px solid #106804;
+}
+.btn-tech2{
+  background-color: #106804;
+  color: #ffffff;
+  padding: 0.7rem 3rem;
   border: 1px solid #106804;
 }
 .trans{
@@ -410,20 +423,24 @@ animation: glow 1s ease-in-out infinite alternate;
     align-items: center;
     /* background-color: red; */
   }
-  
-  .patimg{
-    width: 60px;
-  } 
   .part{
-    width: 100%;
+    width: auto;
+    overflow: hidden;
     position: relative;
-    animation: moveleft2 10s infinite;
-    overflow:visible;
+    margin: auto;
+  }
+  .partner{
+    width: calc(80px * 16);
+    position: relative;
+    animation: moveleft 10s linear infinite;
   }
   
-  @keyframes moveleft2 {
-    from {right: 0;}
-    to {right: 180%;}
+  .patimg{
+    width: 80px;
+  }
+  @keyframes moveleft {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(-80px * 8));}
   }
   .event{
     width: 100%;
