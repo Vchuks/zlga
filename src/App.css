@@ -221,7 +221,7 @@ position: absolute;
 left: 47%;
 top:43%;
 border-radius: 50%;
-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
 }
 .playimg img{
   width: 100px;
@@ -289,9 +289,9 @@ padding: 1rem 2rem !important;
   border-radius: 20px;
 }
 .audioplay{
-  width: 7%;
+  width: 20%;
   border-radius: 50%;
-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
 
 }
 .radio-text{
@@ -364,6 +364,59 @@ animation: glow 1s ease-in-out infinite alternate;
 .h{
   height: 100vh;
 }
+.contact-head{
+  background: linear-gradient(90.25deg, #106804 53.42%, #158805 67.74%);
+}
+.contact-head h1{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 50px;
+}
+.ctimg{
+  width: 220px;
+}
+.cticon{
+  width: 20px;
+}
+.firstct{
+  width: 370px;
+}
+.ct1{
+  font-size: 18px;
+  font-weight: 500;
+}
+.ct2{
+  font-size: 22px;
+  font-weight: 500;
+}
+.form{
+  width: 100%;
+}
+.formin{
+  border: 1px solid #989898;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+.subb{
+  width: 300px;
+  background-color: #106804;
+  color: #ffffff;
+  padding: 0.7rem 3.5rem;
+  margin: auto;
+}
+.btn-broch:hover,.btn-tech:hover{
+  color: #ffffff;
+  background-color: #106804;
+}
+.subb:hover, .btn-broch2:hover,.btn-tech2:hover, .learn-btn:hover{
+  color: #106804;
+  background-color: #ffffff;
+  border: 1px solid #106804;
+}
+.faqimg{
+  width: 50%;
+}
+
 
 
 
@@ -515,7 +568,7 @@ animation: glow 1s ease-in-out infinite alternate;
     width: 100%;
   }
   .audioplay{
-    width: 15%;
+    width: 20%;
   }
   .aboutimg{
     object-fit:cover;
@@ -551,6 +604,18 @@ animation: glow 1s ease-in-out infinite alternate;
   .btn-broch, .btn-broch2{
     width: 100%;
   }
-  
+ 
+  .contact-head h1{
+    font-size: 30px;
+  }
+  .firstct{
+    width: 100%;
+  }
+  .ct2{
+    font-size: 20px;
+  }
+  .subb{
+    width: 100%;
+  }
   
 }

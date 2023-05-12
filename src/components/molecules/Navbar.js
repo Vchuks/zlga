@@ -32,7 +32,7 @@ const Navbar = () => {
               <li className="nav-item dropdown ">
                 <NavLink
                   className="nav-link dropdown-toggle navv"
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -46,12 +46,12 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="#">
                       Medical Services
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="#">
                       Environmental Management
                     </NavLink>
                   </li>
@@ -63,19 +63,19 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link navv" href="#">
-                  ZL Store
+                <NavLink className="nav-link navv" to="#">
+                  ZLGA Store
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link navv" href="#">
+                <NavLink className="nav-link navv" to="/contact">
                   Contact Us
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle navv"
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -84,17 +84,17 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="#">
                       Career
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="#">
                       FAQs
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" href="#">
+                    <NavLink className="dropdown-item navv" to="#">
                       Gallery
                     </NavLink>
                   </li>

@@ -3,6 +3,7 @@ import audioimg from "../../images/Rectangle 13.png";
 import Image from "../atom/Image";
 import Text from "../atom/Text";
 import playimg from "../../images/play.png";
+import TextLinks from "../atom/TextLinks";
 
 const Audio = () => {
   return (
@@ -17,7 +18,7 @@ const Audio = () => {
           <Text className=" text-white fs-5 m-0" children="Join and Enjoy our Online Radio" />
           <Text className="radio-text m-0 pb-3" children="Kunden Online Radio" />
           <div className="d-flex justify-content-center pt-2">
-            <Image src={playimg} className="audioplay"/>
+            <TextLinks className="d-flex justify-content-center" to ="https://kundenradio.mixlr.com" children={<Image src={playimg} className="audioplay"/>} />
           </div>
         </div>
       </div>

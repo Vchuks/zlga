@@ -20,7 +20,7 @@ const Footer = () => {
             <Text className="foottext " children="Our Services"/>
             <TextLinks to="#" children="School" className="colorlight pb-3" />
             <TextLinks to="#" children="Medical Services" className="colorlight pb-3" />
-            <TextLinks to="#" children="ZL Store" className="colorlight pb-3" />
+            <TextLinks to="#" children="ZLGA Store" className="colorlight pb-3" />
             <TextLinks to="#" children="Environmental Management" className="colorlight pb-3" />
           </div>
           
