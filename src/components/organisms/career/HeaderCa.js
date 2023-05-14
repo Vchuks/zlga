@@ -5,7 +5,7 @@ import TextLinks from "../../atom/TextLinks";
 const HeaderCa = () => {
   return (
     <div className="text-white text-center careerbg py-5">
-      <div data-aos="fade-up" data-aos-duration="2000">
+      <div data-aos="zoom-in-up" data-aos-duration="2000">
         <Text
           className="career-head mb-0 pt-3"
           children="We are Result-Oriented"

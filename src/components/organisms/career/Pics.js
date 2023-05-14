@@ -9,12 +9,12 @@ const Pics = () => {
   return (
     <div className='p-3 p-lg-5 my-5'>
       <div className='d-flex gap-3 py-2 flex-column flex-lg-row'>
-        <div><Image className=" w-100" src={img4}  /></div>
-        <div><Image className=" w-100" src={img2}  /></div>
+        <div  data-aos="fade-up" data-aos-duration="2000"><Image className=" w-100" src={img4}  /></div>
+        <div  data-aos="fade-up" data-aos-duration="2000"><Image className=" w-100" src={img2}  /></div>
       </div>
       <div className='d-flex gap-3 py-2 flex-column flex-lg-row'>
-        <div><Image className=" w-100" src={img3}  /></div>
-        <div><Image className=" w-100" src={img1}  /></div>
+        <div  data-aos="fade-up" data-aos-duration="2000"><Image className=" w-100" src={img3}  /></div>
+        <div  data-aos="fade-up" data-aos-duration="2000"><Image className=" w-100" src={img1}  /></div>
       </div>
     </div>
   )
