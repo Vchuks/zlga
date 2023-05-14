@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap');
 
 body{
   font-family: 'Karla', sans-serif;
@@ -29,7 +30,7 @@ a{
   width: 100%;
   display: inline-flex;
   justify-content:flex-end;
-  font-size: 20px;
+  font-size: 18px;
   color: #272727;
 }
 .logow{
@@ -48,6 +49,9 @@ a{
 }
 .navbar {
   --bs-navbar-hover-color:#106804;
+}
+.dropdown-menu{
+  width: auto !important;
 }
 .navv:hover{
   color: #106804 !important;
@@ -416,6 +420,91 @@ animation: glow 2s ease-in-out infinite alternate;
 .faqimg{
   width: 50%;
 }
+.faqpoint{
+  cursor: pointer;
+}
+#spi{
+  display: none;
+}
+.careerbg{
+  background:linear-gradient(88.47deg, #106804 43.33%, #15B000 63.02%);;
+}
+.career-head{
+  font-weight: 800;
+  font-size: 40px;
+}
+.career-text{
+  width: 500px;
+  margin: auto;
+}
+.pics-box1{
+  width:100%
+}
+.pics-box2{
+  width: 100%;
+}
+.start-head{
+  font-weight: 800;
+}
+.start{
+  background: #F3FFF1;
+}
+.start-text{
+  width: 750px;
+  margin: auto;
+}
+.start-pic1, .start-pic2, .start-pic3, .start-pic4{
+  width: 23%;
+  height: 300px;
+  border-radius: 10px;
+}
+.start-pic1{
+  background:url("./images/Vector\ 6.png"), linear-gradient( #64E3FF, rgb(100, 227, 255));
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.start-pic2{
+  background:url("./images/Vector\ 7.png"), linear-gradient( #103C4A, #103C4A);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.start-pic3{
+  background:url("./images/Vector\ 6\ \(3\).png"), linear-gradient( #FED6B1, #FED6B1);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.start-pic4{
+  background:url("./images/Vector\ 7\ \(1\).png"), linear-gradient( #F49E4D, #F49E4D);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.sticon{
+  width: 40px;
+}
+.start1H, .start2H, .start3H, .start4H{
+  font-family: 'Kaisei Decol', serif;
+}
+.start3H{
+  color: #F49E4D;
+}
+.open-card{
+  background: #F3FFF1;
+  border: 0.5px solid rgba(152, 152, 152, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0 !important;
+}
+.open-box{
+  width: 60%;
+  margin: auto;
+}
+.availw{
+  width:fit-content;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
 
 
 
@@ -616,6 +705,24 @@ animation: glow 2s ease-in-out infinite alternate;
   }
   .subb{
     width: 100%;
+  }
+  .career-head{
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .career-text{
+    width: 100%;
+  }
+  .start-text{
+    width: 100%;
+  }
+  .start-pic1, .start-pic2, .start-pic3, .start-pic4{
+    width: 100%;
+    height: auto;
+  }
+  .open-box{
+    width: 90%;
+    margin: auto;
   }
   
 }

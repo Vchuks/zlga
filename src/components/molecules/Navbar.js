@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar nnav sticky-top navbar-expand-lg bg-white py-3 px-3 px-lg-5">
-        <div className="container-fluid d-flex justify-content-between p-0">
-          <NavLink to="/" className=" navbar-brand navtext containerw">
+        <div className="w-100 container-fluid d-flex justify-content-between p-0">
+          <NavLink to="/" className=" navbar-brand navtext ">
             <Image
               src={logo}
               alt="Logo"
@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="navw collapse navbar-collapse" id="navbarText">
+          <div className=" navw collapse navbar-collapse justify-content-end" id="navbarText">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item dropdown ">
                 <NavLink
@@ -84,12 +84,12 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item navv" to="#">
+                    <NavLink className="dropdown-item navv" to="/career">
                       Career
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" to="#">
+                    <NavLink className="dropdown-item navv" to="/faq">
                       FAQs
                     </NavLink>
                   </li>

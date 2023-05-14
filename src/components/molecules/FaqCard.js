@@ -11,7 +11,7 @@ const FaqCard = ({list}) => {
   };
 
   return (
-    <div className="">
+    <div className="faqpoint">
       {!title && (
         <div
           className="w-100 py-3 d-flex align-items-center justify-content-between border-bottom "

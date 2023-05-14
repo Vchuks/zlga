@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "../../atom/Image";
 import ctimg from "../../../images/Contact_header_2880x1000px 1.png";
 import Text from "../../atom/Text";
@@ -8,23 +8,28 @@ import linkedin from '../../../images/Vector (2).png'
 import twitter from '../../../images/Vector (3).png'
 import Input from '../../atom/Input'
 import Button from "../../atom/Button";
+import TextLinks from "../../atom/TextLinks";
 
 const HeaderCt = () => {
+  
+  useEffect(()=>{
+
     window.addEventListener("load", function() {
-        const form = document.getElementById('my-form');
-        form.addEventListener("submit", function(e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
-            method: 'POST',
-            body: data,
-          })
-          .then(() => {
-            alert("Success!");
-          })
-        });
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = "https://script.google.com/macros/s/AKfycbyuS9pme_i9GBUx8gwoypeMMDEGmWQw0nA43Vg9ZJZGsagmnksdbgDhfXEtucqh4ew/exec";
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("Success!");
+        })
       });
+    });
+  },[])
   return (
     <div>
       <div className="contact-head d-flex align-items-center justify-content-between ps-3 ps-lg-5">
@@ -63,16 +68,16 @@ const HeaderCt = () => {
                 </div>
             </div>
             <div className="d-flex gap-4">
-                <div><Image className="cticon" src={inst}/></div>
-                <div><Image className="cticon" src={face}/></div>
-                <div><Image className="cticon" src={linkedin}/></div>
-                <div><Image className="cticon" src={twitter}/></div>
+                <TextLinks to="https://instagram.com/zlglobalalliancenig?igshid=NTc4MTIwNjQ2YQ" children={<div><Image className="cticon" src={inst}/></div>} />
+                <TextLinks to="https://www.facebook.com/zlglobalallianceng?mibextid=LQQJ4d" children={<div><Image className="cticon" src={face}/></div>} />
+                <TextLinks to="" children={<div><Image className="cticon" src={linkedin}/></div>} />
+                <TextLinks to="https://twitter.com/zl_global?s=21&t=IYbD17I41t1jbcGrnDZdgg" children={<div><Image className="cticon" src={twitter}/></div>} />
             </div>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 p-0">
             <Text className="colordark ct2 m-0" children="Send us a Message"/>
             <Text className="colorlight" children="If there's anything that we can do to help or if you have any questions, please don't hesitate to get in touch. Note:(*) Required fields."/>
-            <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbyuS9pme_i9GBUx8gwoypeMMDEGmWQw0nA43Vg9ZJZGsagmnksdbgDhfXEtucqh4ew/exec" className="form d-flex flex-column gap-3">
+            <form id="my-form" className="form d-flex flex-column gap-3">
                 <Input type="text" name="Fullname" placeholder="Fullname*" className="w-100 formin form-control" required />
                 <Input type="text" name="Phone_number" placeholder="Phone Number" className="w-100 formin form-control"  />
                 <Input type="email" name="Email" placeholder="Email*" className="w-100 formin form-control" required />

@@ -10,6 +10,8 @@ import BasicDept from "./components/pages/BasicDept";
 import WaterDept from "./components/pages/WaterDept";
 import CoastDept from "./components/pages/CoastDept";
 import Contact from "./components/pages/Contact";
+import Career from "./components/pages/Career";
+import Faq from "./components/molecules/Faq";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="water" element={<WaterDept />} />
           <Route path="coast" element={<CoastDept />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="career" element={<Career />} />
         </Routes>
       </ScrolltoTop>
     </div>

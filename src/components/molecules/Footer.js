@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='col-sm-12 col-md-12 col-lg-8 p-0 ps-lg-4 d-flex flex-wrap flex-lg-nowrap justify-content-between justify-content-end'>
           <div className='d-flex flex-column footw'>
             <Text className="foottext " children="Our Services"/>
-            <TextLinks to="#" children="School" className="colorlight pb-3" />
+            <TextLinks to="/school" children="School" className="colorlight pb-3" />
             <TextLinks to="#" children="Medical Services" className="colorlight pb-3" />
             <TextLinks to="#" children="ZLGA Store" className="colorlight pb-3" />
             <TextLinks to="#" children="Environmental Management" className="colorlight pb-3" />
@@ -26,17 +26,18 @@ const Footer = () => {
           
           <div className='d-flex flex-column footw'>
             <Text className="foottext" children="Resources"/>
-            <TextLinks to="#" children="Contact Us" className="colorlight pb-3" />
-            <TextLinks to="#" children="Careers" className="colorlight pb-3" />
-            <TextLinks to="#" children="FAQs" className="colorlight pb-3" />
+            <TextLinks to="/contact" children="Contact Us" className="colorlight pb-3" />
+            <TextLinks to="/career" children="Careers" className="colorlight pb-3" />
+            <TextLinks to="/faq" children="FAQs" className="colorlight pb-3" />
             <TextLinks to="#" children="Events" className="colorlight pb-3" />
           </div>
           <div className='d-flex flex-column footw'>
             <Text className="foottext" children="Connect with Us"/>
             <TextLinks to="#" children="LinkedIn" className="colorlight pb-3" />
-            <TextLinks to="#" children="Twitter" className="colorlight pb-3" />
-            <TextLinks to="#" children="Instagram" className="colorlight pb-3" />
-            <TextLinks to="#" children="Facebook" className="colorlight pb-3" />
+            <TextLinks to="https://twitter.com/zl_global?s=21&t=IYbD17I41t1jbcGrnDZdgg" children="Twitter" className="colorlight pb-3" />
+            <TextLinks to="https://instagram.com/zlglobalalliancenig?igshid=NTc4MTIwNjQ2YQ" children="Instagram" className="colorlight pb-3" />
+            <TextLinks to="https://www.facebook.com/zlglobalallianceng?mibextid=LQQJ4d" children="Facebook" className="colorlight pb-3" />
+            <TextLinks to="https://youtube.com/@zlglobalalliance4043" children="Youtube" className="colorlight pb-3" />
           </div>
           <div className='d-flex flex-column footw'>
             <Text className="foottext" children="Legal"/>
