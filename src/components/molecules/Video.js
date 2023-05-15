@@ -4,7 +4,7 @@ import playimg from "../../images/play.png";
 import Image from "../atom/Image";
 
 const Video = () => {
-  const src = "https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+  const src = ""
   
   const handlePlay = () => {
     const videocard = document.querySelector("#video1");

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../atom/Image";
-import img from "../../../images/ss.svg";
+import img from "../../../images/Group 27.png";
 import Text from "../../atom/Text";
 
 const HeaderS = () => {

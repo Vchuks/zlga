@@ -222,13 +222,13 @@ a{
 }
 .playimg{
 position: absolute;
-left: 47%;
+left: 50%;
 top:43%;
 border-radius: 50%;
 animation: glow 2s ease-in-out infinite alternate;
 }
 .playimg img{
-  width: 100px;
+  width: 80px;
 }
 
 .ex{
@@ -285,6 +285,10 @@ position: absolute;
 bottom: 8%;
 left: 30%;
 padding: 1rem 2rem !important;
+}
+audio{
+  height: 10px;
+  width: 100%;
 }
 .audio{
   width: 80%;
@@ -427,7 +431,10 @@ animation: glow 2s ease-in-out infinite alternate;
   display: none;
 }
 .careerbg{
-  background:linear-gradient(88.47deg, #106804 43.33%, #15B000 63.02%);;
+  background:linear-gradient(88.47deg, #106804 43.33%, rgb(21, 176, 0, 0.9) 63.02%),url("./images/Group\ 28.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
 }
 .career-head{
   font-weight: 800;
@@ -459,24 +466,28 @@ animation: glow 2s ease-in-out infinite alternate;
   border-radius: 10px;
 }
 .start-pic1{
-  background:url("./images/Vector\ 6.png"), linear-gradient( #64E3FF, rgb(100, 227, 255));
+  /* background:url("./images/Vector\ 6.png"), linear-gradient( #64E3FF, rgb(100, 227, 255));
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom; */
+  background-color: #64E3FF;
 }
 .start-pic2{
-  background:url("./images/Vector\ 7.png"), linear-gradient( #103C4A, #103C4A);
+  /* background:url("./images/Vector\ 7.png"), linear-gradient( #103C4A, #103C4A);
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom left; */
+  background-color: #103C4A;
 }
 .start-pic3{
-  background:url("./images/Vector\ 6\ \(3\).png"), linear-gradient( #FED6B1, #FED6B1);
+  /* background:url("./images/Vector\ 6\ \(3\).png"), linear-gradient( #FED6B1, #FED6B1);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom; */
+  background-color: #FED6B1;
 }
 .start-pic4{
-  background:url("./images/Vector\ 7\ \(1\).png"), linear-gradient( #F49E4D, #F49E4D);
+  /* background:url("./images/Vector\ 7\ \(1\).png"), linear-gradient( #F49E4D, #F49E4D);
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom left; */
+  background-color: #F49E4D;
 }
 .sticon{
   width: 40px;
@@ -504,6 +515,31 @@ animation: glow 2s ease-in-out infinite alternate;
   border-radius: 5px;
   font-weight: 500;
   font-size: 14px;
+}
+.envirobg{
+  background: url('./images/Group\ 29.png'),linear-gradient(90.3deg, rgb(21, 176, 0, 0.9) 10.18%, #106804 40.96%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.env-head{
+  width: 500px;
+  font-weight: 800;
+  font-size: 40px;
+}
+.env-text{
+  width: 500px;
+}
+.env-img{
+  position: absolute;
+  right: 2%;
+}
+.env-img img{
+  width: 90%;
+}
+.coming{
+  width: 80%;
+  margin :auto;
+  padding: 1rem 0 7rem 0;
 }
 
 
@@ -723,6 +759,25 @@ animation: glow 2s ease-in-out infinite alternate;
   .open-box{
     width: 90%;
     margin: auto;
+  }
+  .env-head{
+    width: 100%;
+    font-size: 30px;
+  }
+  .env-text{
+    width: 100%;
+  }
+  .env-img{
+    position: relative;
+    right: 0;
+  }
+  .env-img img{
+    width: 100%;
+  }
+  .coming{
+    width: 95%;
+    margin :auto;
+    padding: 1rem 0 3rem 0;
   }
   
 }

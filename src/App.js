@@ -12,6 +12,9 @@ import CoastDept from "./components/pages/CoastDept";
 import Contact from "./components/pages/Contact";
 import Career from "./components/pages/Career";
 import Faq from "./components/molecules/Faq";
+import Environment from "./components/pages/Environment";
+import Store from "./components/pages/Store";
+import CarousellEvent from "./components/molecules/CarousellEvent";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="faq" element={<Faq />} />
           <Route path="career" element={<Career />} />
+          <Route path="environment" element={<Environment />} />
+          <Route path="store" element={<Store />} />
+          <Route path="carousellevent" element={<CarousellEvent />} />
         </Routes>
       </ScrolltoTop>
     </div>
