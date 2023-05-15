@@ -16,10 +16,9 @@ const Audio = () => {
       <div className="col-sm-12 col-md-12 col-lg-9 p-2 p-lg-0">
         <div>
           <Text className=" text-white fs-5 m-0" children="Join and Enjoy our Online Radio" />
-          <Text className="radio-text m-0 pb-3" children="Kunden Online Radio" />
-            <audio controls>
-            </audio>
-          <div className="d-flex justify-content-center pt-2">
+          <Text className="radio-text m-0 pb-1" children="Kunden Online Radio" />
+            <div className="d-flex align-items-center gap-2 text-white ">0.00 <span className="audioline"></span> 0:00:00</div>
+          <div className="d-flex justify-content-center p2">
             <TextLinks className="d-flex justify-content-center" to ="https://kundenradio.mixlr.com" children={<Image src={playimg} className="audioplay"/>} />
           </div>
         </div>

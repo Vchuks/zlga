@@ -286,15 +286,17 @@ bottom: 8%;
 left: 30%;
 padding: 1rem 2rem !important;
 }
-audio{
-  height: 10px;
+.audioline{
+  height: 6px;
   width: 100%;
+  background-color: #989898;
+  border-radius: 5px;
 }
 .audio{
   width: 80%;
   margin: auto !important;
   background-color: #106804;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .audioplay{
   width: 20%;
