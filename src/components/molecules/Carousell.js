@@ -114,7 +114,7 @@ const Carousell = () => {
                 </div>
                 <div>
 
-                <TextLinks className="w-100 d-inline-flex justify-content-center" children={<Button className="btn learn-btn px-5 " children="Learn more" />} />
+                <TextLinks to="/environment" className="w-100 d-inline-flex justify-content-center" children={<Button className="btn learn-btn px-5 " children="Learn more" />} />
                 </div>
               </div>
             </div>

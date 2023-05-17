@@ -3,6 +3,8 @@ import Image from '../../atom/Image'
 import woman from '../../../images/Frame 3.png'
 import Text from '../../atom/Text'
 import TextLinks from '../../atom/TextLinks'
+import {Link} from "react-scroll";
+
 
 const HeaderE = () => {
   return (
@@ -21,8 +23,10 @@ const HeaderE = () => {
           to="#"
           children={
             <div className="d-flex gap-1 pt-5 mt-3">
-              <Text className="text-white" children="SEE OUR OPENINGS" />
-              <box-icon name="down-arrow-alt" color="#ffffff"></box-icon>
+              <Link to="envpage" smooth={true}>
+              <Text className="text-white" children="SEE OUR ACTIVITIES" />
+              </Link>
+              <box-icon name="down-arrow-alt" color="#ffffff" animation="fade-down" ></box-icon>
             </div>
           }
         />

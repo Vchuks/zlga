@@ -3,7 +3,7 @@ import envimg2 from "../../../images/image rectangle.png";
 import envimg3 from "../../../images/image rectangle (1).png";
 import envimg4 from "../../../images/image rectangle (2).png";
 import envimg5 from "../../../images/Rectangle 3 (1).png";
-import envimg6 from "../../../images/image rectangles (2).png";
+import envimg6 from "../../../images/wasteimg.png";
 import envimg7 from "../../../images/image rectangle (4).png";
 
 const EnvList=[
@@ -40,7 +40,7 @@ const EnvList=[
         pic: envimg5,
         text1:"MATERIAL RECOVERY",
         text2:"Recycling Services",
-        text3:"TOur recycling services include collection of recyclable materials from commercial, industrial and residential customers, for which we charge collection and processing fees. Each day, our facilities receive and process a wide variety of recyclable materials including cardboard, glass, plastic containers, office paper and newsprint. Our managers are skilled at harvesting quality recoverable material that is marketed to post-consumer mills for the best attainable product value. Through our network of material recovery facilities and our recycling collection services, we work hard to help our customers reduce waste generation and increase recovery rates."
+        text3:"Our recycling services include collection of recyclable materials from commercial, industrial and residential customers, for which we charge collection and processing fees. Each day, our facilities receive and process a wide variety of recyclable materials including cardboard, glass, plastic containers, office paper and newsprint. Our managers are skilled at harvesting quality recoverable material that is marketed to post-consumer mills for the best attainable product value. Through our network of material recovery facilities and our recycling collection services, we work hard to help our customers reduce waste generation and increase recovery rates."
     },
     {
         id:6,

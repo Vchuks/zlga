@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "../atom/Image";
 import logo from "../../images/ZLGA LOGO 1.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(true)
   return (
     <>
       <nav className="navbar nnav sticky-top navbar-expand-lg bg-white py-3 px-3 px-lg-5">
@@ -17,18 +18,20 @@ const Navbar = () => {
             ZL Global Alliance
           </NavLink>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler colorgreen"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"
             aria-controls="navbarText"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={()=>setOpen(!open)}
           >
-            <span className="navbar-toggler-icon"></span>
+            {open ?<span className="navbar-toggler-icon"></span>:
+            <span className="fw-bold fs-1">X</span>}
           </button>
-          <div className=" navw collapse navbar-collapse justify-content-end" id="navbarText">
-            <ul className="w-100 navbar-nav mb-2 mb-lg-0">
+          <div className=" navw collapse navbar-collapse justify-content-lg-center" id="navbarText">
+            <ul className=" navbar-nav mb-2 mb-lg-0">
               <li className="nav-item dropdown ">
                 <NavLink
                   className="nav-link dropdown-toggle navv"
