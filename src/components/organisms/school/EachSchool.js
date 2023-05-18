@@ -3,7 +3,7 @@ import Text from "../../atom/Text";
 import Button from "../../atom/Button";
 import TextLinks from "../../atom/TextLinks";
 
-const EachSchool = ({head2 , text}) => {
+const EachSchool = ({head2 , text, Pdf}) => {
   return (
     <div className="p-3 p-lg-5">
       <Text className="colordark eachsch-head text-center" children="Department of" />
@@ -15,11 +15,7 @@ const EachSchool = ({head2 , text}) => {
           className=""
           children={<Button className="btn btn-broch2" children="Apply Now" />}
         />
-        <TextLinks
-          to=""
-          className=""
-          children={<Button className="btn btn-broch" children="Download Brochure" />}
-        />
+        <Button className="btn btn-broch" children="Download Brochure" onClick={()=> window.open(Pdf)} />
       </div>
     </div>
   );
