@@ -97,7 +97,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" to="#">
+                    <NavLink className="dropdown-item navv" to="/gallery">
                       Gallery
                     </NavLink>
                   </li>

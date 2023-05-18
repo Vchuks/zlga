@@ -23,8 +23,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Gallery/>
-      {/* <ScrolltoTop>
+      <ScrolltoTop>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -41,8 +40,9 @@ function App() {
           <Route path="carousellevent" element={<CarousellEvent />} />
           <Route path="medical" element={<Medical />} />
           <Route path="appointment" element={<AppointmentPage />} />
+          <Route path="gallery" element={<Gallery />} />
         </Routes>
-  </ScrolltoTop> */}
+  </ScrolltoTop>
     </div>
   );
 }
