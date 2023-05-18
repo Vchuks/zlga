@@ -16,6 +16,7 @@ import Environment from "./components/pages/Environment";
 import Store from "./components/pages/Store";
 import CarousellEvent from "./components/molecules/CarousellEvent";
 import Medical from "./components/pages/Medical";
+import AppointmentPage from "./components/pages/AppointmentPage";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="store" element={<Store />} />
           <Route path="carousellevent" element={<CarousellEvent />} />
           <Route path="medical" element={<Medical />} />
+          <Route path="appointment" element={<AppointmentPage />} />
         </Routes>
       </ScrolltoTop>
     </div>

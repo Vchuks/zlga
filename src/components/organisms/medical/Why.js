@@ -33,7 +33,7 @@ const whatList = [
     }
 ]
 const Why = () => {
-    const what = whatList.map(wlist=><div className='wbox2 col-sm-12 col-md-12 col-lg-6 px-3 py-4' key={wlist.id}>
+    const what = whatList.map(wlist=><div className='wbox2 col-sm-12 col-md-12 col-lg-6 px-3 py-4'data-aos="fade-up" data-aos-duration="2000" key={wlist.id}>
         <div >
             
         <Image className="greenp" src={wlist.img}/>
@@ -43,7 +43,7 @@ const Why = () => {
     </div>)
   return (
     <div className='p-3 pb-5 p-lg-5 whymed'>
-      <Text className="wtext w-100 text-center py-2 py-lg-5" children="Why Us?"/>
+      <Text className="wtext w-100 text-center py-2 py-lg-5" data-aos="zoom-in-up" data-aos-duration="2000" children="Why Us?"/>
       <div className='row gap-5 justify-content-between pb-5'>
         {what}
       </div>

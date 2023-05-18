@@ -14,21 +14,24 @@ const HeaderCt = () => {
   
   useEffect(()=>{
 
-    window.addEventListener("load", function() {
+    // window.addEventListener("load", function() {
       const form = document.getElementById('my-form');
+      const mess = document.querySelector('.mess');
       form.addEventListener("submit", function(e) {
         e.preventDefault();
         const data = new FormData(form);
-        const action = "https://script.google.com/macros/s/AKfycbyuS9pme_i9GBUx8gwoypeMMDEGmWQw0nA43Vg9ZJZGsagmnksdbgDhfXEtucqh4ew/exec";
+        const action = e.target.action;
+        // https://script.google.com/macros/s/AKfycbzY3SpCKH4ovpwTv2gPHUGB1FTBKwX29TzYtbhJyn1mxU8A0G6SHXkk8kH-MTi4tkiCfA/exec
         fetch(action, {
           method: 'POST',
           body: data,
         })
         .then(() => {
-          alert("Success!");
+          mess.style.display="block"
+          mess.innerHTML="Success!"
         })
       });
-    });
+    // });
   },[])
   return (
     <div>
@@ -77,11 +80,12 @@ const HeaderCt = () => {
         <div className="col-sm-12 col-md-12 col-lg-6 p-0">
             <Text className="colordark ct2 m-0" children="Send us a Message"/>
             <Text className="colorlight" children="If there's anything that we can do to help or if you have any questions, please don't hesitate to get in touch. Note:(*) Required fields."/>
-            <form id="my-form" className="form d-flex flex-column gap-3">
+            <form action="https://script.google.com/macros/s/AKfycbzY3SpCKH4ovpwTv2gPHUGB1FTBKwX29TzYtbhJyn1mxU8A0G6SHXkk8kH-MTi4tkiCfA/exec" method="post" id="my-form" className="form d-flex flex-column gap-3">
                 <Input type="text" name="Fullname" placeholder="Fullname*" className="w-100 formin form-control" required />
                 <Input type="text" name="Phone_number" placeholder="Phone Number" className="w-100 formin form-control"  />
                 <Input type="email" name="Email" placeholder="Email*" className="w-100 formin form-control" required />
                 <textarea rows="7" name="Comment" placeholder="Type your message here" className="w-100 formin form-control"></textarea>
+          <p className="mess m-auto text-center fs-4 fw-bold colorgreen bg-light rounded-3 p-3"></p>
                 <Button type="submit" children="Submit" className="subb btn "/>
             </form>
         </div>

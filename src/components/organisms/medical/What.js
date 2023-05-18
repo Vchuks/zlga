@@ -37,7 +37,7 @@ const whatList = [
     }
 ]
 const What = () => {
-    const what = whatList.map(wlist=><div className='wbox col-sm-12 col-md-12 col-lg-4 px-3 py-4' key={wlist.id}>
+    const what = whatList.map(wlist=><div className='wbox col-sm-12 col-md-12 col-lg-4 px-3 py-4'data-aos="fade-up" data-aos-duration="2000" key={wlist.id}>
         <div >
             
         <Image className="greenp" src={greenp}/>
@@ -49,7 +49,7 @@ const What = () => {
         <Element id="medpage" name="medpage">
     <div className='p-3 p-lg-5 '>
 
-      <Text className="wtext w-100 text-center py-3 py-lg-5" children="What We Do"/>
+      <Text className="wtext w-100 text-center py-3 py-lg-5" children="What We Do" data-aos="zoom-in-up" data-aos-duration="2000"/>
       <div className='row gap-5 justify-content-between'>
         {what}
       </div>

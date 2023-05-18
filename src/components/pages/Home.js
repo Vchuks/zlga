@@ -4,7 +4,7 @@ import Partners from '../molecules/Partners'
 import Carousell from '../molecules/Carousell'
 import Tech from '../molecules/Tech'
 import Video from "../molecules/Video"
-import Text from '../atom/Text'
+// import Text from '../atom/Text'
 import Team from '../molecules/Team'
 import CarousellEvent from '../molecules/CarousellEvent'
 import Audio from '../molecules/Audio'
