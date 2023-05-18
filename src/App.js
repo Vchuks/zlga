@@ -17,12 +17,14 @@ import Store from "./components/pages/Store";
 import CarousellEvent from "./components/molecules/CarousellEvent";
 import Medical from "./components/pages/Medical";
 import AppointmentPage from "./components/pages/AppointmentPage";
+import Gallery from "./components/pages/Gallery";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <ScrolltoTop>
+      <Gallery/>
+      {/* <ScrolltoTop>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -40,7 +42,7 @@ function App() {
           <Route path="medical" element={<Medical />} />
           <Route path="appointment" element={<AppointmentPage />} />
         </Routes>
-      </ScrolltoTop>
+  </ScrolltoTop> */}
     </div>
   );
 }

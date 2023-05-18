@@ -28,7 +28,7 @@ const Appointment = () => {
   },[])
   return (
     <div className="p-3 p-lg-5 appoint">
-        <Text className="colordark text-center appoint-head" children="Schedue a Visit"/>
+        <Text className="colordark text-center appoint-head" children="Schedule a Visit"/>
       <div className="row gap-5 gap-lg-0">
         <div className="col-sm-12 col-md-12 col-lg-6 p-0 pe-lg-5">
           <Image src={cuate} className="appoint-img"/>

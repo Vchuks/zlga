@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
           <div className='d-flex flex-column footw'>
             <Text className="foottext" children="Connect with Us"/>
-            <TextLinks to="#" children="LinkedIn" className="colorlight pb-3" />
+            {/* <TextLinks to="#" children="LinkedIn" className="colorlight pb-3" /> */}
             <TextLinks to="https://twitter.com/zl_global?s=21&t=IYbD17I41t1jbcGrnDZdgg" children="Twitter" className="colorlight pb-3" />
             <TextLinks to="https://instagram.com/zlglobalalliancenig?igshid=NTc4MTIwNjQ2YQ" children="Instagram" className="colorlight pb-3" />
             <TextLinks to="https://www.facebook.com/zlglobalallianceng?mibextid=LQQJ4d" children="Facebook" className="colorlight pb-3" />

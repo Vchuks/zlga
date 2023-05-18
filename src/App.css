@@ -607,6 +607,22 @@ border-radius: 20px;
 .mess{
   display: none;
 }
+.imgfit{
+  object-fit: cover;
+  border-radius: 20px;
+}
+.himg{
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.himg2{
+  height: 65%;
+  margin-top: 1rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 
 @media (max-width:999px) {
@@ -852,6 +868,13 @@ border-radius: 20px;
   }
   .appoint-img{
     width: 100%;
+  }
+  .himg{
+    height: auto;
+  }
+  .himg2{
+    height: auto;
+    
   }
   
   

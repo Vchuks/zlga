@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "../../atom/Image";
-import whoimg from "../../../images/who.jpg";
+import whoimg from "../../../images/who.png";
 import whoimg2 from "../../../images/who2.png";
 import whoimg3 from "../../../images/who3.png";
 import icon1 from "../../../images/our partners.png";
@@ -38,7 +38,7 @@ const Who = () => {
           data-aos="zoom-in-up"
           data-aos-duration="2000"
         >
-          <Image className="w-100 rounded-5" src={whoimg} />
+          <Image className="w-100" src={whoimg} />
         </div>
         <div
           className="col-sm-12 col-md-12 col-lg-6"

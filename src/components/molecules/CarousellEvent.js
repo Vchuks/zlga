@@ -3,8 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import sayimg from "../../images/Rectangle 11.png";
 import sayimg2 from "../../images/Rectangle 11 (1).png";
-import sayimg3 from "../../images/Rectangle 11 (2).png";
-import sayimg4 from "../../images/Rectangle 11 (3).png";
+import sayimg3 from "../../images/eventcar.png";
+import sayimg4 from "../../images/event summary.png";
 import sayimg5 from "../../images/Rectangle 11 (4).png";
 import Image from "../atom/Image";
 import Text from "../atom/Text";
@@ -26,18 +26,17 @@ const list = [
     id: "03",
     img: sayimg3,
     comment:
-      "CEO of ZL Global Alliance, Dr. Mrs Abiola Bashorun meets with Prof. Wole Soyinka",
+      "ZL Global Alliance and the Kwara State Government begins an operation to keep the Ilorin metropolis clean.",
   },
   {
     id: "04",
     img: sayimg4,
     comment:
-      "Executive Governor of Ondo State during the launch of Swamp Buggy",
+      "Governor Akeredolu inspects and applauds the management of ZL Global Alliance for massive progress in activities",
   },
   {
     id: "05",
     img: sayimg5,
-    head: "Vector Control",
     comment:
       "Dr. Mrs Abiola Bashorun emphasizes on the importance of creating a greener and cleaner environment.",
   },

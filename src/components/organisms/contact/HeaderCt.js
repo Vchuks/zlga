@@ -4,7 +4,7 @@ import ctimg from "../../../images/Contact_header_2880x1000px 1.png";
 import Text from "../../atom/Text";
 import inst from '../../../images/Vector.png'
 import face from '../../../images/Vector (1).png'
-import linkedin from '../../../images/Vector (2).png'
+import youtube from '../../../images/yout.png'
 import twitter from '../../../images/Vector (3).png'
 import Input from '../../atom/Input'
 import Button from "../../atom/Button";
@@ -73,8 +73,8 @@ const HeaderCt = () => {
             <div className="d-flex gap-4">
                 <TextLinks to="https://instagram.com/zlglobalalliancenig?igshid=NTc4MTIwNjQ2YQ" children={<div><Image className="cticon" src={inst}/></div>} />
                 <TextLinks to="https://www.facebook.com/zlglobalallianceng?mibextid=LQQJ4d" children={<div><Image className="cticon" src={face}/></div>} />
-                <TextLinks to="" children={<div><Image className="cticon" src={linkedin}/></div>} />
                 <TextLinks to="https://twitter.com/zl_global?s=21&t=IYbD17I41t1jbcGrnDZdgg" children={<div><Image className="cticon" src={twitter}/></div>} />
+                <TextLinks to="https://youtube.com/@zlglobalalliance4043" children={<div><Image className="cticon" src={youtube}/></div>} />
             </div>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 p-0">
