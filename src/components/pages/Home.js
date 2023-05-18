@@ -18,7 +18,7 @@ const Home = () => {
       <Carousell/>
       <Tech/>
       <div className='trans'>
-        <Text className="transp" children="The Transformation"/>
+        {/* <Text className="transp" children="The Transformation"/> */}
       <Video />
       </div>
       <Team />

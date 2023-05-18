@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "../../atom/Text";
 import TextLinks from "../../atom/TextLinks";
+import { Link } from "react-scroll";
 
 const HeaderCa = () => {
   return (
@@ -18,8 +19,10 @@ const HeaderCa = () => {
           to="#"
           children={
             <div className="d-flex gap-1 justify-content-center pt-5 my-3">
+              <Link to="openpage" smooth={true}>
               <Text className="text-white" children="SEE OUR OPENINGS" />
-              <box-icon name="down-arrow-alt" color="#ffffff"></box-icon>
+              </Link >
+              <box-icon name="down-arrow-alt" color="#ffffff" animation="fade-down"></box-icon>
             </div>
           }
         />

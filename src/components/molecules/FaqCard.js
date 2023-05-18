@@ -17,10 +17,10 @@ const FaqCard = ({list}) => {
           className="w-100 py-3 d-flex align-items-center justify-content-between border-bottom "
           onClick={handleState}
         >
-          <h5 className="d-flex align-items-center">
+          <h5 className="d-flex align-items-center w-100">
             {question}
           </h5>
-          <box-icon name="chevron-up" color="#272727"></box-icon>
+          <box-icon name="chevron-up" color="#272727" ></box-icon>
         </div>
       )}
       {title && (
@@ -28,7 +28,7 @@ const FaqCard = ({list}) => {
           className="w-100 py-3 d-flex align-items-center justify-content-between "
           onClick={handleState}
         >
-          <h5 className="d-flex colordark fw-bold align-items-center">
+          <h5 className="d-flex colordark fw-bold align-items-center w-100">
             {question}
           </h5>
           <box-icon name="chevron-down" color="#272727" ></box-icon>

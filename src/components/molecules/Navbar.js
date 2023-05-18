@@ -49,7 +49,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item navv" to="#">
+                    <NavLink className="dropdown-item navv" to="/medical">
                       Medical Services
                     </NavLink>
                   </li>

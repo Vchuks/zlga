@@ -1,4 +1,5 @@
 import React from "react";
+import vid from "../../images/vid.mp4"
 import playimg from "../../images/play.png";
 
 import Image from "../atom/Image";
@@ -38,25 +39,11 @@ const Video = () => {
   };
 
   return (
-    <div className="wrapper">
-      <button
-        className="ex fs-3 btn p-lg-5 text-black"
-        onClick={handleClose}
-      >
-        x
-      </button>
-      <div className="playimg" id="play" onClick={handlePlay}>
-        <Image src={playimg} alt="" />
-      </div>
-      <div className="video">
-        <video width="100%" height="100%" id="video1" className="vid" controls>
-          <source
-            src={src}
-            type="video/mp4"
-          />
-          Your browser does not support HTML video.
-        </video>
-      </div>
+    <div className="w-100 d-flex justify-content-center">
+
+    <video width="80%" controls>
+      <source src={vid} type="video/mp4"></source>
+    </video>
     </div>
   );
 };

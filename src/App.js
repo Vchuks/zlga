@@ -15,6 +15,7 @@ import Faq from "./components/molecules/Faq";
 import Environment from "./components/pages/Environment";
 import Store from "./components/pages/Store";
 import CarousellEvent from "./components/molecules/CarousellEvent";
+import Medical from "./components/pages/Medical";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="environment" element={<Environment />} />
           <Route path="store" element={<Store />} />
           <Route path="carousellevent" element={<CarousellEvent />} />
+          <Route path="medical" element={<Medical />} />
         </Routes>
       </ScrolltoTop>
     </div>
