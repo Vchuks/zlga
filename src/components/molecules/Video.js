@@ -1,8 +1,7 @@
 import React from "react";
 import vid from "../../images/vid.mp4"
-// import playimg from "../../images/play.png";
+import ReactPlayer from 'react-player';
 
-// import Image from "../atom/Image";
 
 const Video = () => {
   // const src = ""
@@ -39,11 +38,8 @@ const Video = () => {
   // };
 
   return (
-    <div className="w-100 d-flex justify-content-center">
-
-    <video width="80%" controls>
-      <source src={vid} type="video/mp4"></source>
-    </video>
+    <div className="w-100 d-flex justify-content-center p-3 p-lg-5">
+<ReactPlayer url={vid} width="90%" height="100%" controls />
     </div>
   );
 };
