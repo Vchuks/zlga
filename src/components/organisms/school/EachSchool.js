@@ -11,7 +11,7 @@ const EachSchool = ({head2 , text, Pdf}) => {
       <Text className="colorlight eachsch-text text-center" children={text} />
       <div className="d-flex flex-column flex-md-row justify-content-center gap-2 pt-5">
         <TextLinks
-          to=""
+          to="https://api.whatsapp.com/send?phone=2348064552898"
           className=""
           children={<Button className="btn btn-broch2" children="Apply Now" />}
         />
