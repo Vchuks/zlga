@@ -1,6 +1,6 @@
 import React from "react";
 import vid from "../../images/vid.mp4"
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import playimg from "../../images/play.png";
 import Image from "../atom/Image";
 
