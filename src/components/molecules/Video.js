@@ -1,5 +1,6 @@
 import React from "react";
-import vid from "../../images/vid.mp4"
+// import vid from "../../images/vid.mp4"
+
 import ReactPlayer from 'react-player';
 
 
@@ -38,8 +39,8 @@ const Video = () => {
   // };
 
   return (
-    <div className="w-100 d-flex justify-content-center p-3 p-lg-5">
-<ReactPlayer url={vid} width="90%" height="100%" controls />
+    <div className="w-100 d-flex justify-content-center">
+<ReactPlayer url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" width="100%" height="100%" controls />
     </div>
   );
 };
