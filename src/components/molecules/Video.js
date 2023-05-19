@@ -40,7 +40,7 @@ const Video = () => {
 
   return (
     <div className="w-100 d-flex justify-content-center">
-<ReactPlayer url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" width="100%" height="100%" controls />
+<ReactPlayer url="../../images/vid.mp4" width="100%" height="100%" controls />
     </div>
   );
 };
