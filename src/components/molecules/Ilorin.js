@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Text from '../atom/Text'
 import Button from '../atom/Button'
 import TextLinks from '../atom/TextLinks'
+import Image from '../atom/Image'
 
 
 const Ilorin = () => {
@@ -21,23 +22,23 @@ const Ilorin = () => {
               
          <Carousel autoPlay infiniteLoop showThumbs={false} showIndicators={false} showStatus={false} width="90%">
                 <div>
-                    <img src={ilorinimg1} alt=""/>
+                    <Image src={ilorinimg1} alt=""/>
                     
                 </div>
                 <div>
-                    <img src={ilorinimg2} alt="" />
+                    <Image src={ilorinimg2} alt="" />
                     
                 </div>
                 <div>
-                    <img src={ilorinimg3} alt="" />
+                    <Image src={ilorinimg3} alt="" />
                     
                 </div>
                 <div>
-                    <img src={ilorinimg4} alt="" />
+                    <Image src={ilorinimg4} alt="" />
                     
                 </div>
                 <div>
-                    <img src={ilorinimg5} alt="" />
+                    <Image src={ilorinimg5} alt="" />
                     
                 </div>
             </Carousel>
