@@ -958,11 +958,14 @@ position: relative;
     margin-left: 0;
   }
   .ilbgil{
-    height: 400px;
+    height: 360px;
     padding-top: 36%;
     padding-left: 44%;
   }
- 
+ .illbtn{
+  width: 60%;
+  margin-left: auto;
+ }
   
   
 }
