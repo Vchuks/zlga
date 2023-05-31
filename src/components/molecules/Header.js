@@ -3,9 +3,12 @@ import Text from "../atom/Text";
 import comp from "../../images/Comp 1.json";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import CountUp from 'react-countup';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
+    <>
+    <p className="tell">Are you experiencing any issues with flood control in your area? <Link to="/ilorin-contact">Tell us now</Link></p>
     <div className="row px-3 py-3 px-lg-5 align-items-center header">
       <div className="col-sm-12 col-md-12 col-lg-6 p-0" data-aos="zoom-in-up" data-aos-duration="2000">
         <h1 className="head-text">
@@ -60,6 +63,7 @@ const Header = () => {
         </Player>
       </div>
     </div>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ import Team from '../molecules/Team'
 import CarousellEvent from '../molecules/CarousellEvent'
 import Audio from '../molecules/Audio'
 import Footer from '../molecules/Footer'
+import Ilorin from '../molecules/Ilorin'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Header />
       <Partners />
       <Carousell/>
+      <Ilorin/>
       <Tech/>
       <div className='trans'>
         {/* <Text className="transp" children="The Transformation"/> */}

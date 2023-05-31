@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap');
 
+
 body{
   font-family: 'Karla', sans-serif;
   background-color: #ffffff;
@@ -26,6 +27,7 @@ a{
 .containerw{
   width: 100%;
 }
+
 .navw{
   width: 100%;
   display: inline-flex;
@@ -104,6 +106,7 @@ a{
   background-color: #F3FFF1;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 .carousel-container{
   background-color: #F3FFF1;
@@ -117,6 +120,7 @@ a{
 .carouh{
   height: 300px;
 }
+
 .carou-text{
   color: #272727;
   font-size: 20px;
@@ -623,6 +627,71 @@ border-radius: 20px;
   object-fit: cover;
   border-radius: 20px;
 }
+.ilbg{
+  background: linear-gradient(135deg, #FEFFCD 62%, #ffffff 38%);
+}
+.ilorin-box{
+  width: 335px;
+  padding: 1rem;
+  border: 1px solid #989898;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+position: relative;
+/* box-sizing: border-box; */
+}
+.text-il{
+  color: #4F4F4F;
+}
+.num-il{
+  position: absolute;
+  width: 40px;
+  color: #106804;
+  background-color: #ffffff;
+  border: 1px solid #989898;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem 1rem;
+  right: -6%;
+  top: 12%;
+}
+.twoil{
+  margin: auto;
+}
+.threeil{
+  margin-left: auto;
+}
+.illbtn{
+  display:flex;
+  justify-content: flex-end;
+}
+.ilbgil{
+
+  background: url(./images/Frame\ 20.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+  padding-top: 34%;
+  padding-left: 42%;
+}
+.tell{
+  background-color: #106804;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0;
+  border-bottom: 5px solid #DF9300;
+  font-size: 18px;
+}
+.tell a{
+  color: #ffffff;
+  font-style: italic;text-decoration: underline;
+
+}
+
+
 
 
 @media (max-width:999px) {
@@ -876,6 +945,24 @@ border-radius: 20px;
     height: auto;
     
   }
+  .ilorin-box{
+    width: 95%;
+  }
+  .text-il{
+    color: #4F4F4F;
+  }
+  .twoil{
+    margin: 0;
+  }
+  .threeil{
+    margin-left: 0;
+  }
+  .ilbgil{
+    height: 400px;
+    padding-top: 36%;
+    padding-left: 44%;
+  }
+ 
   
   
 }

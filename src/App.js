@@ -18,6 +18,7 @@ import CarousellEvent from "./components/molecules/CarousellEvent";
 import Medical from "./components/pages/Medical";
 import AppointmentPage from "./components/pages/AppointmentPage";
 import Gallery from "./components/pages/Gallery";
+import Ilcontact from "./components/organisms/ilcontact/Ilcontact";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="water" element={<WaterDept />} />
           <Route path="coast" element={<CoastDept />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="ilorin-contact" element={<Ilcontact />} />
           <Route path="faq" element={<Faq />} />
           <Route path="career" element={<Career />} />
           <Route path="environment" element={<Environment />} />

@@ -110,7 +110,7 @@ const Carousell = () => {
                 <div>
 
                 <Text className="carou-text" children={eachlist.head}/>
-                <Text className="carou-comment" children={eachlist.comment} />
+                <Text className="carou-comment w-100" children={eachlist.comment} />
                 </div>
                 <div>
 
@@ -119,10 +119,10 @@ const Carousell = () => {
               </div>
             </div>
           </>
-        );
+        )
       })}
       </Carousel>
-      ;
+      
     </>
   );
 };
