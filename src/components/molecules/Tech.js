@@ -15,7 +15,7 @@ const Tech = () => {
         children="The ZLGA School of Environmental Technology offers a wide range of courses for people and all our courses are full accredited and accepted worldwide."
       />
       <div className="d-flex justify-content-center tech-box-container" >
-        <div className="tech-box" data-aos="zoom-out" data-aos-duration="2000">
+        <div className="tech-box" data-aos="zoom-in" data-aos-duration="2000">
           <div className="w-100">
             <Image className="w-100" src={techpic1} />
           </div>
