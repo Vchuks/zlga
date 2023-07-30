@@ -30,6 +30,7 @@ const Footer = () => {
             <TextLinks to="/career" children="Careers" className="colorlight pb-3" />
             <TextLinks to="/faq" children="FAQs" className="colorlight pb-3" />
             <TextLinks to="/carousellevent" children="Events" className="colorlight pb-3" />
+            <TextLinks to="https://zlglobalalliance.com/static/media/zlgabrochure.pdf" children="Download Brochure" className="colorlight pb-3" />
           </div>
           <div className='d-flex flex-column footw'>
             <Text className="foottext" children="Connect with Us"/>

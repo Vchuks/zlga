@@ -9,14 +9,14 @@ const Header = () => {
   return (
     <>
     <p className="tell">Are you experiencing any issues with flood control in your area? <Link to="/ilorin-contact">Tell us now</Link></p>
-    <div className="row px-3 py-3 px-lg-5 align-items-center header">
+    <div className="row px-3 py-3 pb-5 px-lg-5 align-items-center header">
       <div className="col-sm-12 col-md-12 col-lg-6 p-0" data-aos="zoom-in-up" data-aos-duration="2000">
         <h1 className="head-text">
           The Environmental Management{" "}
           <span className="colorgreen">Experts.</span>
         </h1>
         <Text
-          className="colorlight head-text2"
+          className="colorlight head-text2 py-3"
           children="We are an alliance that covers a wide range of activities that affects the lifestyle of individuals and communities in their immediate environment."
         />
         <div className="headstat d-flex justify-content-between">

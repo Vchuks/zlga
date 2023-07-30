@@ -38,7 +38,9 @@ const Video = () => {
   };
 
   return (
-    <div className="w-100 d-flex justify-content-center p-3 py-lg-5">
+    <>
+    <p className="px-3 px-lg-5 tech-head1  mt-5 mode">Our Mode of <span className="colorgreen">Operation</span></p>
+    <div className="w-100 d-flex justify-content-center my-3 my-lg-5">
       <div className="wrapper">
       <button
         className="ex fs-3 btn p-lg-5 text-black"
@@ -61,6 +63,7 @@ const Video = () => {
     </div>
 
     </div>
+    </>
   );
 };
 

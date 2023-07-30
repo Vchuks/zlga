@@ -9,11 +9,11 @@ import techpic2 from "../../images/Rectangle 6 (1).png";
 const Tech = () => {
   return (
     <div className="px-3 py-3 p-lg-5 ">
-      <h2 className="text-center tech-head1" data-aos="zoom-in-up" data-aos-duration="2000">ZLGA TECH</h2>
-      <Text
+      <h2 className="tech-head1 py-5 mt-5" data-aos="zoom-in-up" data-aos-duration="2000">College of <span className="colorgreen">Environmental Science & Technology.</span></h2>
+      {/* <Text
         className="text-center tech-head2" data-aos="zoom-in-up" data-aos-duration="2000"
         children="The ZLGA School of Environmental Technology offers a wide range of courses for people and all our courses are full accredited and accepted worldwide."
-      />
+      /> */}
       <div className="d-flex justify-content-center tech-box-container" >
         <div className="tech-box" data-aos="zoom-in" data-aos-duration="2000">
           <div className="w-100">
@@ -60,7 +60,7 @@ const Tech = () => {
           </div>
         </div>
       </div>
-        <TextLinks to="/school" className=" d-flex justify-content-center" children={<Button className="btn btn-tech2 " children="Explore More Courses"/>} />
+        <TextLinks to="/school" className="pb-5 py-4 d-flex justify-content-center" children={<Button className="btn btn-tech2 " children="Explore More Courses"/>} />
     </div>
   );
 };

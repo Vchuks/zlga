@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap');
 
 
@@ -55,6 +55,9 @@ a{
 .dropdown-menu{
   width: auto !important;
 }
+.navv{
+  color: #272727;
+}
 .navv:hover{
   color: #106804 !important;
 }
@@ -103,17 +106,30 @@ a{
   color: #ffffff;
 }
 .carou{
-  background-color: #F3FFF1;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   box-sizing: border-box;
+}
+.carouabs{
+  position: absolute;
+  bottom: 0;
+}
+.carr{
+  margin-bottom: 10rem;
 }
 .carousel-container{
   background-color: #F3FFF1;
 }
+.caroue{
+  background-color: #F3FFF1;
+  padding: 5rem 0;
+}
 .carou-head{
+  width: 720px;
   color: #272727;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 800;
   padding: 2rem 0;
 }
@@ -122,12 +138,21 @@ a{
 }
 
 .carou-text{
-  color: #272727;
+  color: #fff;
   font-size: 20px;
-  font-weight: 700;
+  line-height: 20px;
+  /* font-weight: 700; */
+}
+.carou-learn{
+  color: #fff;
+  font-size: 20px;
+  /* font-weight: 800; */
 }
 .carou-comment{
-  /* width: 500px; */
+  color: #fff;
+line-height: 20px;
+  /* font-weight: 700; */
+  font-size: 20px;
   text-align: justify;
 }
 .react-multi-carousel-dot-list{
@@ -150,9 +175,10 @@ a{
   box-shadow: 2.02699px 4.05399px 20.2699px 3.04049px rgba(0, 0, 0, 0.1);
 }
 .tech-head1{
+  width:800px;
   color: #272727;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 60px;
 }
 .tech-head2{
   width: 1050px;
@@ -195,10 +221,18 @@ a{
 }
 .transp{
   color: #272727;
-  font-size: 32px;
+  font-size: 60px;
   font-weight: 800;
-  text-align: center;
-  padding: 5rem 0 2rem 0;
+  padding: 5rem 0 4rem 0;
+}
+.mode{
+  padding: 7rem 0 2rem 0;
+}
+.magg{
+  margin-bottom: 5rem;
+}
+.padd{
+  padding-bottom: 5rem;
 }
 .wrapper{
   width: 100%;
@@ -608,9 +642,7 @@ border-radius: 20px;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
 }
-.mess{
-  display: none;
-}
+
 .imgfit{
   object-fit: cover;
   border-radius: 20px;
@@ -690,6 +722,47 @@ position: relative;
   font-style: italic;text-decoration: underline;
 
 }
+#spin{
+  display: none;
+}
+.elw{
+  width: 70px;
+}
+.kun{
+  border-radius: 25px;
+background: linear-gradient(197deg, #E7E7E7 13.02%, #BABABA 100%);
+padding: 5rem;
+}
+.kun p{
+  font-size: 48px;
+  font-weight: 800;
+  color: #272727;
+  margin: 1rem 0 !important;
+}
+.kun-btn{
+  font-size: 20px;
+  font-weight: 700;
+}
+.alaf{
+  padding: 5rem;
+  border-radius: 25px;
+background: #106804;
+margin: 1rem 0 !important;
+}
+.alaf .text1{
+  width: 400px;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 800;
+}
+.alaf .text2{
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+}
+.pady{
+  padding: 10rem 0;
+}
 
 
 
@@ -725,9 +798,14 @@ position: relative;
     margin-bottom: 1rem !important;
   }
   .carou-head{
+    width: 100%;
     color: #272727;
-    font-size: 20px;
+    font-size: 30px;
   }
+  .career-text, .carou-learn, .carou-comment{
+    font-size: 16px;
+  }
+ 
   .tech-box-container{
     flex-direction: column;
     gap: 2rem;
@@ -736,9 +814,14 @@ position: relative;
   .tech-box{
     width: 100%;
   }
-  .tech-head1{
-    font-size: 20px;
-  }
+  
+    .tech-head1{
+      width:100%;
+      color: #272727;
+      font-weight: 800;
+      font-size: 30px;
+    };
+  
   .tech-head2{
     width: 100%;
     font-size: 16px;
@@ -791,6 +874,7 @@ position: relative;
     top:20px;
   }
   .transp{
+    font-size: 30px;
     padding: 2rem 0 1rem 0;
     /* margin-bottom: 0; */
   }
@@ -966,6 +1050,40 @@ position: relative;
   width: 60%;
   margin-left: auto;
  }
+ .elw{
+  width: 50px;
+ }
+ .kun{
+ gap: 2rem;
+padding: 2rem;
+}
+.kun p{
+  font-size: 25px;
+  
+}
+.kun-btn{
+  font-size: 16px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.alaf{
+  padding: 2rem;
+  gap: 2rem;
+}
+.alaf .text1{
+  width: 100%;
+  font-size: 25px;
+  
+}
+.alaf .text2{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+.pady{
+  padding: 7rem 0;
+}
   
   
 }

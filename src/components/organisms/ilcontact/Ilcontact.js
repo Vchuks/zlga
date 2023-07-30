@@ -1,28 +1,66 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Input from "../../atom/Input";
-import Button from "../../atom/Button";
 import Image from "../../atom/Image";
 import cuate from '../../../images/cuate2.png'
 import Text from "../../atom/Text";
 import Footer from "../../molecules/Footer";
 
 const Ilcontact = () => {
-  useEffect(()=>{
+  const spinRef= useRef()
 
+  const [errMsg, setErrMsg] = useState()
+  const [details, setDetails] = useState({
+      name: "",
+      email: "",
+      phone_number: "",
+      state: "",
+      country: "",
+      address: "",
+      additional_info:""
+  })
+
+  const handleForm =(e)=>{
+    setDetails((prevData)=>{
+      return {...prevData, [e.target.name]: e.target.value}
+      
+    })
+  }
+
+  const submitForm =(e)=>{
+    e.preventDefault()
+    spinRef.current.style.display="block"
+
+    fetch("https://zlglobalalliance.com/api/send-admin-email",{
+      method:"POST",
+      body:JSON.stringify(details),
+      headers:{
+        "Content-Type": "application/json"
+      }
+    })
+    .then(response=>response.json())
+    .then(result=>{
+      console.log(result)
+      setErrMsg(result.message)
+      spinRef.current.style.display="none"
+    })
+    .catch(err=>console.log(err))
+  }
+  
+  useEffect(()=>{
     // window.addEventListener("load", function() {
-      const form = document.getElementById('my-form3');
-      const mess = document.querySelector('.mess');
-      form.addEventListener("submit", function(e) {
+      const action="https://script.google.com/macros/s/AKfycbyE3XhJvE7ZqIClxWWLHE_Cixm5T9NR9i6tAdqjB6GU9AGTixgaOXV7DG1cMD4kWDis/exec"
+      const form = document.querySelector('#my-form3');
+      const but = document.querySelector('.subb');
+      
+      but.addEventListener("click", function(e) {
         e.preventDefault();
-        const appoint= e.target.action
         const data = new FormData(form);
-        fetch(appoint, {
+        fetch(action, {
           method: 'POST',
           body: data,
         })
         .then(() => {
-          mess.style.display="block"
-          mess.innerHTML="Recieved!"
+          // mess.style.display="block"
         })
       });
     // });
@@ -36,58 +74,78 @@ const Ilcontact = () => {
         </div>
         <div className="col-sm-12 col-md-12 col-lg-6 p-0 ps-lg-5">
 
-      <form action="https://script.google.com/macros/s/AKfycbyE3XhJvE7ZqIClxWWLHE_Cixm5T9NR9i6tAdqjB6GU9AGTixgaOXV7DG1cMD4kWDis/exec" method="post" id="my-form3" className="formapp d-flex flex-column gap-3 bg-white p-4">
+      <form id="my-form3"  className="formapp d-flex flex-column gap-3 bg-white p-4">
         <Text className="colordark fw-bolder fs-4" children="Kindly fill out this form"/>
         <Input
           type="text"
-          name="Full_name"
+          name="name"
           placeholder="Full Name*"
           className="w-100 formin2 form-control"
+          value={details.name}
+          onChange={handleForm}
           required
         />
         <Input
           type="email"
-          name="Email"
+          name="email"
           placeholder="Email*"
           className="w-100 formin2 form-control"
+          value={details.email}
+          onChange={handleForm}
           required
         />
         <Input
           type="text"
-          name="Phone_Number"
+          name="phone_number"
           placeholder="Phone Number"
           className="w-100 formin2 form-control"
+          value={details.phone_number}
+          onChange={handleForm}
         />
         <div className="row gap-4">
 
         <Input
           type="text"
-          name="State"
+          name="state"
           placeholder="State"
           className="col formin2 form-control"
+          value={details.state}
+          onChange={handleForm}
           />
         <Input
           type="text"
-          name="Country"
+          name="country"
           placeholder="Country"
           className="col formin2  form-control"
+          value={details.country}
+          onChange={handleForm}
           />
           </div>
           <Input
           type="text"
-          name="Address"
+          name="address"
           placeholder="Address"
           className="w-100 formin2 form-control"
+          value={details.address}
+          onChange={handleForm}
         />
         <textarea
           rows="7"
-          name="AddNotes"
+          name="additional_info"
           placeholder="Additional Notes"
           className="w-100 formin2 form-control"
+          value={details.additional_info}
+          onChange={handleForm}
         ></textarea>
-          <p className="mess m-auto text-center fs-4 fw-bold colorgreen bg-light rounded-3 p-3"></p>
-        
-            <Button type="submit" children="Submit" className="subb btn " />
+          {errMsg &&<span className="mess text-center fs-4 fw-bold colorgreen bg-light rounded-3 p-3">{errMsg}</span>}
+            <button type="submit" className="subb btn d-flex align-items-center justify-content-center " onClick={submitForm}> <div
+              className="spinner-border spinner-border-sm me-2 text-warning"
+              id="spin"
+              role="status"
+              ref={spinRef}
+            >
+              <span className="sr-only"></span>
+            </div>Submit</button> 
           
       </form>
       </div>

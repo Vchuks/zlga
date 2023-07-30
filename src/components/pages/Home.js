@@ -10,6 +10,7 @@ import CarousellEvent from '../molecules/CarousellEvent'
 import Audio from '../molecules/Audio'
 import Footer from '../molecules/Footer'
 import Ilorin from '../molecules/Ilorin'
+import Foundation from '../molecules/Foundation'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       </div>
       <Team />
       <CarousellEvent />
+      <Foundation/>
       <Audio />
       <Footer/>
     </div>

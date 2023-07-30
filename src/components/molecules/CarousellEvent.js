@@ -44,12 +44,13 @@ const list = [
 
 const CarousellEvent = () => {
   return (
-    <>
+    <div className="caroue">
       <Carousel
         width="100%"
         swipeable
         draggable
         showDots={true}
+        className=""
         // responsive={responsive}
         responsive={{
           desktop: {
@@ -88,24 +89,21 @@ const CarousellEvent = () => {
         removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
         // deviceType={this.props.deviceType}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+        // itemClass="carousel-item-padding-40-px"
       >
-        {list.map((eachlist, idx) => {
+        {list.map((eachlist) => {
           return (
             <>
-              <div
-                className=" row event px-3 py-3 p-lg-5 gap-4 flex-column"
-                key={idx}
-              >
                 <Text
-                  className="text-center carou-head transp pb-0 mb-0"
+                  className="transp px-3 p-3 p-lg-5 pb-0 mb-0 "
                   children="Events"
                 />
+              <div
+                className=" row event px-3 py-3 p-lg-5 gap-4 flex-column"
+                key={eachlist.id}
+              >
 
-                <Text
-                  className="transevent"
-                  children="Check out our latest events at ZL Global Alliance"
-                />
+                
                 <div className=" p-0 col w-100 ">
                   <Image src={eachlist.img} alt="" className="w-100 eventimg" />
                 </div>
@@ -119,7 +117,7 @@ const CarousellEvent = () => {
         })}
       </Carousel>
       ;
-    </>
+    </div>
   );
 };
 
