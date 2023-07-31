@@ -1304,6 +1304,9 @@ margin: 3rem 0 !important;
   /* body{
     overflow-x:hidden
   } */
+   .card-carrier{
+    overflow-x: hidden;
+   }
   .backcc{
     height: 100%;
     margin: 4rem 0;
@@ -1316,7 +1319,7 @@ margin: 3rem 0 !important;
       width: 80%;
       border-radius: 3px;
       border: #08516B 2px solid;
-      height:100%;
+      /* height:100%; */
       position: relative;
       background-color: #ffffff;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
@@ -1324,7 +1327,7 @@ margin: 3rem 0 !important;
     
   .cover-image{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     object-fit: cover;
   }
     .card  .testimonial-left-button {

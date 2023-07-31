@@ -43,13 +43,14 @@ const data = [
 
   
 
-const MobileC = () => {const [centerSlideDataIndex, setCenterSlideDataIndex] = React.useState(0);
-  const onCenterSlideDataIndexChange = (newIndex) => {
-      setCenterSlideDataIndex(newIndex);
-  };
+const MobileC = () => {
+  // const [centerSlideDataIndex, setCenterSlideDataIndex] = React.useState(0);
+  // const onCenterSlideDataIndexChange = (newIndex) => {
+      // setCenterSlideDataIndex(newIndex);
+  // };
  
   return (
-    <div className="card card-carrier overflow-hidden d-block d-lg-none">
+    <div className="card card-carrier  d-block d-lg-none">
       <div className='backcc' style={{ position: "relative" }}>
         <ResponsiveContainer
           // carouselRef={ref}
@@ -61,11 +62,11 @@ const MobileC = () => {const [centerSlideDataIndex, setCenterSlideDataIndex] = R
               <StackedCarousel
               data={data}
                                     carouselWidth={width}
-                                    slideWidth={400}
+                                    slideWidth={350}
                                     slideComponent={MobileCTest}
                                     maxVisibleSlide={5}
                                     currentVisibleSlide={currentVisibleSlide}
-                                    onActiveSlideChange={onCenterSlideDataIndexChange}
+                                    // onActiveSlideChange={onCenterSlideDataIndexChange}
                 // ref={carouselRef}
                 // slideComponent={MobileCTest}
                 // slideWidth={400}
