@@ -11,6 +11,7 @@ import Audio from '../molecules/Audio'
 import Footer from '../molecules/Footer'
 import Ilorin from '../molecules/Ilorin'
 import Foundation from '../molecules/Foundation'
+import MobileC from '../molecules/MobileC'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Header />
       <Partners />
       <Carousell/>
+      <MobileC/>
       <Ilorin/>
       <Tech/>
       <div className='trans'>

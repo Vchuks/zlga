@@ -16,7 +16,7 @@ a{
   color: #106804;
 }
 .colorlight{
-  color: #989898;
+  color: #323232;
 }
 .colordark{
   color: #272727;
@@ -34,6 +34,10 @@ a{
   justify-content:flex-end;
   font-size: 18px;
   color: #272727;
+}
+.nnav{
+  background-color: #ffffff;
+
 }
 .logow{
   width: 70px;
@@ -113,8 +117,9 @@ a{
   box-sizing: border-box;
 }
 .carouabs{
+  width: 76%;
   position: absolute;
-  bottom: 0;
+  bottom: 8%;
 }
 .carr{
   margin-bottom: 10rem;
@@ -139,20 +144,24 @@ a{
 
 .carou-text{
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   /* font-weight: 700; */
 }
 .carou-learn{
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   /* font-weight: 800; */
+}
+.carou-img{
+  width: 100%;
+  /* object-fit: contain; */
 }
 .carou-comment{
   color: #fff;
 line-height: 20px;
   /* font-weight: 700; */
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
 }
 .react-multi-carousel-dot-list{
@@ -183,7 +192,7 @@ line-height: 20px;
 .tech-head2{
   width: 1050px;
   margin: auto;
-  color:#989898;
+  color:#323232;
   font-size: 20px;
 }
 .tech-text1{
@@ -192,7 +201,7 @@ line-height: 20px;
   font-size: 20px;
 }
 .tech-text2{
-  color: #989898;
+  color: #323232;
 }
 .btn-tech{
   color: #106804;
@@ -315,7 +324,7 @@ animation: bounce 2s ease-in-out infinite alternate;
   width: 100%;
 }
 .transevent{
-  color: #989898;
+  color: #323232;
   text-align: center;
 }
 .event{
@@ -325,7 +334,7 @@ animation: bounce 2s ease-in-out infinite alternate;
 .eventtext{
   width: 40%;
   background: rgba(0, 0, 0, 0.2);
-border: 1px solid #989898;
+border: 1px solid #323232;
 backdrop-filter: blur(27.5px);
 color: #ffffff;
 border-radius: 10px;
@@ -337,7 +346,7 @@ padding: 1rem 2rem !important;
 .audioline{
   height: 6px;
   width: 100%;
-  background-color: #989898;
+  background-color: #9C9C9C;
   border-radius: 5px;
 }
 .audio{
@@ -451,7 +460,7 @@ animation: glow 2s ease-in-out infinite alternate;
   width: 100%;
 }
 .formin{
-  border: 1px solid #989898;
+  border: 1px solid #323232;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
 }
@@ -665,7 +674,7 @@ border-radius: 20px;
 .ilorin-box{
   width: 335px;
   padding: 1rem;
-  border: 1px solid #989898;
+  border: 1px solid #323232;
   background-color: #FFFFFF;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
 border-radius: 20px;
@@ -680,7 +689,7 @@ position: relative;
   width: 40px;
   color: #106804;
   background-color: #ffffff;
-  border: 1px solid #989898;
+  border: 1px solid #323232;
   border-radius: 50%;
   font-size: 18px;
   display: flex;
@@ -767,18 +776,61 @@ margin: 1rem 0 !important;
 
 
 
+
 @media (max-width:999px) {
+  .stack{
+   
+    height: 65vh;
+    width: 100%;
+  }
   .containerw{
     width: 0;
   }
-  
+  .colort{
+    color: transparent;
+  }
   .navw{
     display: inline-flex;
     justify-content:left;
+    background-color: #106804;
+    height: 100vh;
+    font-size: 30px;
+    padding:  1rem;
+    align-items: flex-start;
+    color: #ffffff !important;
   }
-  .navtext{
+  .navv{color: #FFFFFF !important;
+  
+    }
+    
+    .nnav2{
+  background-color: #106804 !important;
+    }
+   
+    .nav-link{
+    margin-bottom: 1rem;
+  }
+  .navbar-nav .nav-link.active{
+    color: #FFFFFF !important;
+  }
+  .navtext {
+    color:#106804 !important;
+    font-weight: 700;
     font-size: 18px;
   }
+  
+  .navtext2{
+    font-weight: 700;
+        color: #ffffff;
+      }
+ 
+  .dropdown-menu{
+    --bs-dropdown-link-active-color: #272727 ;
+    --bs-dropdown-link-active-bg: #106804 !important;
+    --bs-dropdown-bg: #106804 !important;
+    --bs-dropdown-font-size: 20px;
+  }
+  
   .head-text{
     width: 100%;
     font-size: 30px;
@@ -875,7 +927,7 @@ margin: 1rem 0 !important;
   }
   .transp{
     font-size: 30px;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     /* margin-bottom: 0; */
   }
   .picone{

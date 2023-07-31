@@ -63,7 +63,7 @@ const Carousell = () => {
   ];
 
   return (
-    <>
+    <div className="d-none d-lg-block">
       <p className="px-3 py-3 p-lg-5 carou-head pt-5 mt-5">
         We are Reinforcing a <span className="colorgreen">Safer Ecosystem</span>
       </p>
@@ -125,13 +125,13 @@ const Carousell = () => {
                 key={eachlist.id}
               >
                 <div
-                  className="w-100 p-0 col-sm-12 col-md-12 col-lg-4  "
+                  className="w-100 p-0 col-sm-12 col-md-12 col-lg-3  "
                   data-aos="zoom-in-up"
                   data-aos-duration="2000"
                 >
-                  <Image src={eachlist.img} alt="" className="w-100" />
-                  <div className="carouabs">
-                    <div className="px-2">
+                  <div className="w-100 position-relative"><Image src={eachlist.img} alt="" className="carou-img" /></div>
+                  <div className="position-absolute carouabs">
+                    <div className="w-100 px-2">
 
                     <span className="carou-text">{eachlist.head}: </span>
                     <span
@@ -139,13 +139,13 @@ const Carousell = () => {
                       >{eachlist.comment}
                     </span>
                       </div>
-                    <div>
+                    <div className="">
                       <TextLinks
                         to="/environment"
                         
                         children={
                           <p
-                            className="carou-learn pt-2 px-2"
+                            className="carou-learn pt-2 ps-2"
                             >Learn more
                           </p>
                         }
@@ -158,7 +158,7 @@ const Carousell = () => {
           );
         })}
       </Carousel>
-    </>
+    </div>
   );
 };
 

@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Image from "../atom/Image";
 import logo from "../../images/ZLGA LOGO 1.png";
+import closeicon from "../../images/iconoir_cancel.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true)
   return (
     <>
-      <nav className="navbar nnav sticky-top navbar-expand-lg bg-white py-3 px-3 px-lg-5">
-        <div className="w-100 container-fluid d-flex justify-content-between p-0">
-          <NavLink to="/" className=" navbar-brand navtext ">
+      <nav className={`navbar ${open ? "nnav" : "nnav2"} sticky-top navbar-expand-lg py-3 px-lg-5`}>
+        <div className="w-100  container-fluid d-flex justify-content-between p-0">
+          <NavLink to="/" className={`ps-3 ps-lg-0 navbar-brand ${open ? "navtext" : "navtext2"} `}>
             <Image
               src={logo}
               alt="Logo"
@@ -18,7 +19,7 @@ const Navbar = () => {
             ZL Global Alliance
           </NavLink>
           <button
-            className="navbar-toggler colorgreen"
+            className=" navbar-toggler me-3 me-lg-0 border-0  colort"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"
@@ -28,7 +29,7 @@ const Navbar = () => {
             onClick={()=>setOpen(!open)}
           >
             {open ?<span className="navbar-toggler-icon"></span>:
-            <span className="fw-bold fs-1">X</span>}
+            <span className=""><Image src={closeicon} className="w-75"/></span>}
           </button>
           <div className=" navw collapse navbar-collapse justify-content-lg-center" id="navbarText">
             <ul className=" navbar-nav mb-2 mb-lg-0">
