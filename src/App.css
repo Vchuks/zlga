@@ -772,6 +772,160 @@ margin: 1rem 0 !important;
 .pady{
   padding: 10rem 0;
 }
+.card  .testimonial-left-button {
+  display: none;
+  position: absolute;
+  /* margin-left: 435px; */
+  top: 50%;
+  left:32%;
+  /* width: 24px;
+  height: 8px; */
+  background-color: #3CBEEC;
+  z-index: 4;
+
+}
+.card  .testimonial-right-button {
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  /* margin-left: 838px; */
+  top: 50%;
+  /* right: 100%; */
+  box-shadow: none;
+  /* width: 24px;
+  height: 8px; */
+  /* background-color: #3CBEEC; */
+  color: #1D0128;
+  font-weight: 700;
+  font-size: 20px;
+  z-index: 4;
+
+}
+
+.card .card-button.right {
+  left: 0;
+}
+.react-stacked-center-carousel {
+  /* padding: 3rem 0; */
+  overflow-y:visible !important;
+  overflow-x:visible ;
+}
+
+.card-card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  border: #08516B 2px solid;
+  /* height:45vh; */
+  /* height:300px; */
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-card:hover {
+  transform: scale(1.05);
+}
+
+.react-stacked-center-carousel-slide-0 .card-card {
+  cursor: default;
+  }
+
+.react-stacked-center-carousel-slide-0 .card-card:hover {
+  transform: none;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+.card-carrier{
+  background: transparent !important;
+ padding-top: 3%;
+ border: none;
+ 
+}
+
+.card-card .card-overlay {
+  user-select: none;
+  position: absolute;
+  background-color: #00000099;
+  transition: all 300ms ease;
+  border-radius: 0px;
+
+}
+
+.card-card:hover .card-overlay {
+  background-color: #0000002d;
+}
+
+.react-stacked-center-carousel-slide-0 .card-overlay {
+  background-color: #00000099 !important;
+}
+
+/* .card-card .cover-image {
+  /* object-fit: cover; */
+
+.card-card .cover {
+  position: absolute;
+  transition: opacity 300ms ease;
+}
+.react-stacked-center-carousel-slide-0 .card-card .cover {
+  transition: opacity 300ms ease, z-index 0ms 300ms;
+}
+
+.card-card .cover.on {
+  opacity: 1;
+  z-index: 1;
+}
+
+.card-card .cover.off {
+  opacity: 0;
+  z-index: -1;
+}
+
+.card-card .detail {
+  display: flex;
+}
+.card-card .video {
+  width: 40%;
+}
+.card-card .discription {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+
+.card-card .discription >p{
+ 
+  text-align: center;
+  padding-top: 40px;
+  font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.02em;
+text-align: justified;
+
+}
+.card-card >p{
+  text-align: center;
+  padding-top: 20px;
+  font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.02em;
+text-align: justified;
+
+}
+
 
 
 
@@ -1098,16 +1252,17 @@ margin: 1rem 0 !important;
     padding-top: 36%;
     padding-left: 44%;
   }
+  
  .illbtn{
   width: 60%;
-  margin-left: auto;
+  margin: auto;
  }
  .elw{
   width: 50px;
  }
  .kun{
  gap: 2rem;
-padding: 2rem;
+padding: 1rem;
 }
 .kun p{
   font-size: 25px;
@@ -1120,7 +1275,7 @@ padding: 2rem;
   justify-content: center;
 }
 .alaf{
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
 }
 .alaf .text1{
@@ -1139,3 +1294,85 @@ padding: 2rem;
   
   
 }
+
+/* for card carousel */
+@media screen and (max-width:997px){
+  /* body{
+    overflow-x:hidden
+  } */
+  .backcc{
+    height: 100%;
+    margin: 4rem 0;
+  }
+    .card-card {
+      transition: all 300ms ease;
+      cursor: pointer;
+      margin-left: 10%;
+      margin-top: 3rem;
+      width: 80%;
+      border-radius: 3px;
+      border: #08516B 2px solid;
+      height:100%;
+      position: relative;
+      background-color: #ffffff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
+    }
+    
+  .cover-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+    .card  .testimonial-left-button {
+      display: none;
+      position: absolute;
+      
+      top: 45%;
+      left:0%;
+      
+      z-index: 4;
+    
+    }
+    .card  .testimonial-right-button {
+      position: absolute;
+    
+      top: -10%;
+      left: 20%;
+      box-shadow: none;
+      
+      z-index: 4;
+    
+    }
+    .tt{
+      position: absolute;
+      bottom: 5%;
+      color: #ffffff;
+    }
+  } 
+  
+  @media screen and (min-width:765px) and (max-width:992px){
+   
+    .ilorin-box{
+      width: 95%;
+    }
+    .text-il{
+      color: #4F4F4F;
+    }
+    .twoil{
+      margin: 0;
+    }
+    .threeil{
+      margin-left: 0;
+    }
+    .ilbgil{
+      height: 100%;
+      padding-top: 32%;
+      padding-left: 40%;
+    }
+    
+   .illbtn{
+    width: 60%;
+    margin: auto;
+    
+   }
+    }

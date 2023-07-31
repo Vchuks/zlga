@@ -48,7 +48,7 @@ const Ilorin = () => {
           children={<Button className="btn btn-broch2" children="Contact Us" />}
         />
       </div>
-      <div className="col-sm-12 col-md-12 col-lg-6 my-lg-5 ">
+      <div className="col-sm-12 col-md-12 col-lg-6 my-4 my-lg-5 ">
         <div className=" ilorin-box my-5">
           <Text
             className="colordark fw-bold mb-1 fs-5"
