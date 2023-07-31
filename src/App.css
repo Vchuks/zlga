@@ -932,11 +932,7 @@ text-align: justified;
 
 
 @media (max-width:999px) {
-  .stack{
-   
-    height: 65vh;
-    width: 100%;
-  }
+  
   .containerw{
     width: 0;
   }
@@ -1263,6 +1259,7 @@ text-align: justified;
  .kun{
  gap: 2rem;
 padding: 1rem;
+margin: 2rem 0 !important;
 }
 .kun p{
   font-size: 25px;
@@ -1277,6 +1274,8 @@ padding: 1rem;
 .alaf{
   padding: 1rem;
   gap: 2rem;
+margin: 3rem 0 !important;
+
 }
 .alaf .text1{
   width: 100%;

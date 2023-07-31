@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import sayimg from "../../images/service 1.png";
 import sayimg2 from "../../images/service 2.png";
 import sayimg3 from "../../images/service 3.png";
@@ -44,6 +44,44 @@ const data = [
   
 
 const MobileC = () => {
+  
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  const delay = 15000;
+  const [touchPosition, setTouchPosition] = useState(null)
+
+  const handleTouchStart = (e) => {
+      const touchDown = e.touches[0].clientX
+      setTouchPosition(touchDown)
+  }
+  
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition
+  
+    if(touchDown === null) {
+        return
+    }
+  
+    const currentTouch = e.touches[0].clientX
+    const diff = touchDown - currentTouch
+  
+    if (diff > 5) {
+      setIndex((prevIndex) =>
+      prevIndex === data.length - 1 ? 0 : prevIndex + 1
+    )
+    }
+  
+    if (diff < -5) {
+      setIndex((prevIndex) =>
+      prevIndex === data.length - 1 ? 0 : prevIndex - 1
+    )
+    }
+  
+    setTouchPosition(null)
+  }
+
+
   const ref = React.useRef(StackedCarousel);
   useEffect(() => {
     setInterval(stuff, 200000);
@@ -53,10 +91,26 @@ const MobileC = () => {
   function stuff() {
     ref.current?.goNext();
   }   
- 
+ function resetTimeout(){
+  if (timeoutRef.current) {
+    clearTimeout(timeoutRef.current);
+  }
+}
+React.useEffect(() => {resetTimeout();
+  timeoutRef.current = setTimeout(
+    () =>
+      setIndex((prevIndex) =>
+        prevIndex === data.length - 1 ? 0 : prevIndex + 1
+      ),
+    delay
+  );
+
+  return () => {resetTimeout();};
+}, [index]);
+
   return (
-    <div className="card card-carrier d-block d-lg-none">
-      <div className='backcc' style={{ position: "relative" }}>
+    <div className="card card-carrier overflow-hidden d-block d-lg-none">
+      <div className='backcc' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} style={{ position: "relative" }}>
         <ResponsiveContainer
           carouselRef={ref}
           render={(width, carouselRef) => {

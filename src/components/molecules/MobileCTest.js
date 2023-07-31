@@ -19,13 +19,13 @@ export const MobileCTest = React.memo(function (StackedCarouselSlideProps) {
       <div  className="card-card" draggable={false}>
         <div className={`cover fill ${isCenterSlide ? "off" : "on"}`}>
           <div
-            className="card-overlay fill"
+            className=" card-overlay fill"
             onClick={() => {
               if (!isCenterSlide) swipeTo(slideIndex);
             }}
           />
         </div>
-        <div style={{width: '100%', height:"50vh"}} className="detail fill">
+        <div style={{width: '100%', height:"100%"}} className="detail fill">
           <div className="discription">
             <img
               // style={{ width: "100%",height:"80vh" }}
