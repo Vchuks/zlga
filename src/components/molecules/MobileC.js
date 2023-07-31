@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import sayimg from "../../images/service 1.png";
 import sayimg2 from "../../images/service 2.png";
 import sayimg3 from "../../images/service 3.png";
@@ -43,107 +43,55 @@ const data = [
 
   
 
-const MobileC = () => {
-  
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
-
-  const delay = 15000;
-  const [touchPosition, setTouchPosition] = useState(null)
-
-  const handleTouchStart = (e) => {
-      const touchDown = e.touches[0].clientX
-      setTouchPosition(touchDown)
-  }
-  
-  const handleTouchMove = (e) => {
-    const touchDown = touchPosition
-  
-    if(touchDown === null) {
-        return
-    }
-  
-    const currentTouch = e.touches[0].clientX
-    const diff = touchDown - currentTouch
-  
-    if (diff > 5) {
-      setIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? 0 : prevIndex + 1
-    )
-    }
-  
-    if (diff < -5) {
-      setIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? 0 : prevIndex - 1
-    )
-    }
-  
-    setTouchPosition(null)
-  }
-
-
-  const ref = React.useRef(StackedCarousel);
-  useEffect(() => {
-    setInterval(stuff, 200000);
-    console.log("i fire once");
-  }, []);
-
-  function stuff() {
-    ref.current?.goNext();
-  }   
- function resetTimeout(){
-  if (timeoutRef.current) {
-    clearTimeout(timeoutRef.current);
-  }
-}
-React.useEffect(() => {resetTimeout();
-  timeoutRef.current = setTimeout(
-    () =>
-      setIndex((prevIndex) =>
-        prevIndex === data.length - 1 ? 0 : prevIndex + 1
-      ),
-    delay
-  );
-
-  return () => {resetTimeout();};
-}, [index]);
-
+const MobileC = () => {const [centerSlideDataIndex, setCenterSlideDataIndex] = React.useState(0);
+  const onCenterSlideDataIndexChange = (newIndex) => {
+      setCenterSlideDataIndex(newIndex);
+  };
+ 
   return (
     <div className="card card-carrier overflow-hidden d-block d-lg-none">
-      <div className='backcc' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} style={{ position: "relative" }}>
+      <div className='backcc' style={{ position: "relative" }}>
         <ResponsiveContainer
-          carouselRef={ref}
-          render={(width, carouselRef) => {
+          // carouselRef={ref}
+          render={(width) => {
             let currentVisibleSlide = 5;
             if (width <= 1280) currentVisibleSlide = 3;
             if (width <= 200) currentVisibleSlide = 1;
             return (
               <StackedCarousel
-                ref={carouselRef}
-                slideComponent={MobileCTest}
-                slideWidth={400}
-                carouselWidth={width}
-                data={data}
-                maxVisibleSlide={5}
-                disableSwipe
+              data={data}
+                                    carouselWidth={width}
+                                    slideWidth={400}
+                                    slideComponent={MobileCTest}
+                                    maxVisibleSlide={5}
+                                    currentVisibleSlide={currentVisibleSlide}
+                                    onActiveSlideChange={onCenterSlideDataIndexChange}
+                // ref={carouselRef}
+                // slideComponent={MobileCTest}
+                // slideWidth={400}
+                // carouselWidth={width}
+                // data={data}
+                // maxVisibleSlide={5}
+                disableSwipe = {false}
                 customScales={[1, 0.85, 0.7, 0.55]}
                 transitionTime={450}
-                currentVisibleSlide={currentVisibleSlide}
+                useGrabCursor={true}
+                // currentVisibleSlide={currentVisibleSlide}
               />
             );
           }}
         />
-        <span
+        {/* <span
           className="card-button testimonial-left-button"
           size="small"
-          onClick={() => ref.current?.goBack()}
+          onClick={() => ref.current?.swipeTo(-1)}
         >
           <box-icon type='solid' name='chevron-left'></box-icon>
-        </span>
+        </span> */}
         <div
           className="d-flex card-button testimonial-right-button"
           size="small"
-          onClick={() => ref.current?.goNext()}
+          // onClick={() => ref.current?.swipeTo(1)}
         >
 
           <p>Swipe to discover</p>
