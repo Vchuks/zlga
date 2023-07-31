@@ -956,6 +956,9 @@ text-align: justified;
     .nnav2{
   background-color: #106804 !important;
     }
+    .closs{
+      width: 70%;
+    }
    
     .nav-link{
     margin-bottom: 1rem;
@@ -972,6 +975,8 @@ text-align: justified;
   .navtext2{
     font-weight: 700;
         color: #ffffff;
+    font-size: 18px;
+
       }
  
   .dropdown-menu{

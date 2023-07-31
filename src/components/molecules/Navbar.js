@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(true)
   return (
     <>
-      <nav className={`navbar ${open ? "nnav" : "nnav2"} sticky-top navbar-expand-lg py-3 px-lg-5`}>
+      <nav className={`navbar ${open ? "nnav" : "nnav2"} sticky-top navbar-expand-lg py-2 px-lg-5`}>
         <div className="w-100  container-fluid d-flex justify-content-between p-0">
           <NavLink to="/" className={`ps-3 ps-lg-0 navbar-brand ${open ? "navtext" : "navtext2"} `}>
             <Image
@@ -28,8 +28,8 @@ const Navbar = () => {
             aria-label="Toggle navigation"
             onClick={()=>setOpen(!open)}
           >
-            {open ?<span className="navbar-toggler-icon"></span>:
-            <span className=""><Image src={closeicon} className="w-75"/></span>}
+            {open ?<span className="text-dark navbar-toggler-icon"></span>:
+            <span className=""><Image src={closeicon} className="closs"/></span>}
           </button>
           <div className=" navw collapse navbar-collapse justify-content-lg-center" id="navbarText">
             <ul className=" navbar-nav mb-2 mb-lg-0">
