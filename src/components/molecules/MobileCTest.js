@@ -1,6 +1,6 @@
 import React from 'react'
 import TextLinks from "../atom/TextLinks"
-import { StackedCarouselSlideProps } from "react-stacked-center-carousel";
+// import { StackedCarouselSlideProps } from "react-stacked-center-carousel";
 
 export const MobileCTest = React.memo(function (StackedCarouselSlideProps) {
     const {
